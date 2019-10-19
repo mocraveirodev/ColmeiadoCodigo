@@ -219,5 +219,23 @@ header a{
 
 .container .card .face.face2 .content a:hover{
     background: #333;
-    color: #fff;
+    color: #FFF;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer p{
+    width: 50%;
+}
+
+footer i{
+    font-size: 30px;
+    color: #FFF;
 }
