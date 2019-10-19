@@ -19,10 +19,18 @@ header img{
     height: 100px;
 }
 
+.menu{
+    width: 70%;
+}
+
 .nav-link{
     color: #FFF;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
+}
+
+.login{
+    width: 40%;
 }
 
 header .btn{
@@ -30,36 +38,60 @@ header .btn{
     border: 1px solid #707070;
     border-radius: 7px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
     color: #FFF;
 }
 
 header a{
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
     color: #FDCA0C;
 }
-
-/* MAIN */
-
-/* main{
-    position: relative;
-} */
 
 /* BANNER */
 
 #banner{
     width: 100vw;
     height: 100vh;
-    padding-top: 134px;
+    padding: 134px 100px 134px 100px;
     background-color: #FFF;
 }
 
 #banner p{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 30px;
     color: #3D3103;
 }
 
+/* TRILHAS */
+
+#trilhas{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 0px 100px;
+    background-color: #000;
+    border: 1px solid #707070;
+}
+
+#trilhas img{
+    width: 34vw;
+    height: 60vh;
+}
+
+.trilhas p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.trilhas span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#trilhas .trilhas img{
+    width: 30vw;
+    height: 20vh;
+}
