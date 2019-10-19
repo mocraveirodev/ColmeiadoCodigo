@@ -1,38 +1,59 @@
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* HEADER */
 
 header{
+    position: fixed;
+    z-index: 999;
     width: 100%;
-    height: 100%;
-    background: #000000 0% 0% no-repeat padding-box;
+    background: #000;
     border: 1px solid #707070;
 }
+
 header img{
     width: 250px;
     height: 100px;
 }
+
 .nav-link{
-    color: #fff;
+    color: #FFF;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
+
 header .btn{
     background: #FDCA0C;
     border: 1px solid #707070;
     border-radius: 7px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    color: #FFFFFF;
+    font-size: 25px;
+    color: #FFF;
 }
 
 header a{
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: #FDCA0C;
 }
+
+/* BANNER */
+
+#banner{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 134px;
+    background-color: #FFF;
+}
+
+#banner p{
+    font-weight: bold;
+    font-size: 30px;
+    color: #3D3103;
+}
+
