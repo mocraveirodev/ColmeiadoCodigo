@@ -33,14 +33,21 @@ header img{
     width: 40%;
 }
 
-header .btn{
+header .btn a{
     background: #FDCA0C;
     border: 1px solid #707070;
     border-radius: 7px;
+    padding: 6px;
     text-align: center;
     font-weight: 700;
     font-size: 25px;
     color: #FFF;
+    text-decoration: none;
+}
+
+header .btn a:hover{
+    color: #000;
+    transition: ease-in-out 0.5s;
 }
 
 header a{
@@ -48,6 +55,11 @@ header a{
     font-weight: 700;
     font-size: 25px;
     color: #FDCA0C;
+}
+
+/*LOGIN*/
+a.log {
+    margin-top: 8px;
 }
 
 /* BANNER */
@@ -239,3 +251,35 @@ footer i{
     font-size: 30px;
     color: #FFF;
 }
+
+/*LOGIN*/
+#login{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+    border: 1px solid #707070;
+}
+
+.btn-amarelo {
+    background: #FDCA0C;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFF;
+    width: 85px;
+    height: 35px;
+}
+
+.btn-amarelo:hover {
+    color: #000;
+    transition: ease-in-out 0.5s;
+}
+
+/*Cadastrar*/
+#cadastrar {
+    margin-top: 110px;
+}
+
