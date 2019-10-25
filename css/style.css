@@ -2,6 +2,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* HEADER */
@@ -283,3 +285,43 @@ footer i{
     margin-top: 110px;
 }
 
+/* Area do Aluno*/
+.areaDoAluno{
+    background-color:#EBEBED;
+    margin:0;
+    
+
+}
+.areaDoAluno h3{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.abelhaFeliz{
+    width: 9vw;
+}
+
+.colmeia{
+    background-image:url(../img/areaDoAlunoBG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 4vh;
+    font-family: poppins;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    padding-block-start: 11vh;
+    padding-left: 11vw;
+    padding-block-end: 6vw;
+}
+
+.perfil{
+    background: blue;
+    margin: 0;
+}
+.cursos{
+    margin:0;
+    padding: 0;
+}
+
+.cursos img{
+    height: 12vh;
+}
