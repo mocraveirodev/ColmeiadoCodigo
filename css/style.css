@@ -378,10 +378,10 @@ footer i{
 
 
 #tituloConquistas{
-    font-size: 4.5rem;
-    margin-left: 110px;
-    margin-top: -175px;
-    margin-bottom: 120px;
+    font-size: 3.8vw;
+    position: absolute;
+    left: 1.8em;
+    top: 1.3em;
     scroll-behavior: none;
     overflow: hidden;
     color: #FFF;
@@ -389,17 +389,23 @@ footer i{
 
 #subtituloConquistas{
     overflow: hidden;
-    margin-top: 102px;
-    font-size: 40px;
+    position: relative;
+    top: 0.4em;
+    margin-bottom: 3vh;
+    font-size: 2.3vw;
     text-align: center;
 }
 
 #imgCadeado{
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 1vh;
+    width: 8vw;
 }
 
 #colmeiaBaixo :hover{
     cursor: pointer;
     
+}
+
+#imgColmeia{
+    width: 60vw;
 }
