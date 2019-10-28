@@ -20,20 +20,40 @@
     </aside>
     <main class="areaDoAluno container row col-md-8 col-lg-8">
         <div class="container d-flex">
-            <img class="abelhaFeliz" src="img/abelha.svg" alt="ilustração abelha feliz">
+            <img id="abelhaFeliz" src="img/abelha.svg" alt="ilustração abelha feliz">
             <h3>Deixe a abelha feliz, comece agora mesmo a sua trilha!</h3>
         </div>
         <div class="container-fluid">
             <h1 class="colmeia">Colmeia</h1>
         </div>
-        <div class="cursos container-fluid d-flex justify-content-around">
-            <button class="btn btn-lg btn-primary" id="htmlButton"><span>HTML</span></button>
-            <button class="btn btn-lg btn-primary cssButton"><span>CSS</span></button>
-            <button class="btn btn-lg btn-primary jsButton"><span>JavaScript</span></button>
+        <div class="cursos container-fluid">
+            <div class="d-flex justify-content-around">
+                <button class="btn btn-lg btn-primary" id="htmlButton"><span>HTML</span></button>
+                <button class="btn btn-lg btn-primary" id="cssButton"><span>CSS</span></button>
+                <button class="btn btn-lg btn-primary" id="jsButton"><span>JavaScript</span></button>
+            </div>
+            <div class="metaDiaria">
+                <p>Meta diária</p>
+                <div class="progressBar"></div>
+                <p class="porcentagemProgresso">50%</p>
+            </div>
         </div>
     </main>
     <aside class="perfil container-fluid  col-3">
-        <p>text</p>
+       <div class="user container-fluid d-flex justify-content-end">
+           <p class="align-middle">Júlia Mel</p>
+           <img src="img/profileImage.svg" alt="">
+       </div>
+       <div class="profileOptions container-fluid d-flex justify-content-between">
+           <img src="img/notificacao.svg" alt="">
+           <img src="img/email.svg" alt="">
+           <img src="img/configuracoes.svg" alt="">
+       </div>
+       <div class="support container-fluid d-flex flex-column">
+       <img src="img/supportImage.svg" alt="">
+       <button class="btn btn-lg btn-primary" id="suporteButton">CENTRAL DE SUPORTE
+       </button>
+        </div>
     </aside>
 </body>
 
