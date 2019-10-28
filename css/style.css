@@ -369,43 +369,40 @@ footer i{
 }
 
 /*Salão das conquistas*/
-
-
 #mainConquistas{
     background: #FFE277AF;
     height: 100vh;
 }
-
-
 #tituloConquistas{
-    font-size: 4vw;
-    margin-left: 6vw;
-    margin-top: -22vh;
-    margin-bottom: 120px;
+    font-size: 3.8vw;
+    position: absolute;
+    left: 1.8em;
+    top: 1.3em;
     scroll-behavior: none;
     overflow: hidden;
     color: #FFF;
     position: absolute;
 }
-
 #subtituloConquistas{
     overflow: hidden;
-    margin-top: 5vh;
+    position: relative;
+    top: 0.4em;
+    margin-bottom: 3vh;
     font-size: 2.3vw;
     text-align: center;
 }
-
 #imgCadeado{
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 1vh;
+    width: 8vw;
 }
-
 #colmeiaBaixo :hover{
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
-
 #imgColmeia{
-    width:60vw;
+    width: 60vw;
+    cursor: pointer;    
 }
-
+/* CHAT */
+.chat{
+    width: 100%;
+}
