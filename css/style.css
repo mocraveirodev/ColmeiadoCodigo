@@ -505,4 +505,40 @@ width: 18vw;
     padding: 0;
     font-size: 13pt;
     margin-top: 45px;
+  
+#htmlButton:hover{
+    background-color:#712206 ;
 }
+/*Salão das conquistas*/
+
+
+#mainConquistas{
+    background: #FFE277AF;
+    height: 100vh;
+}
+
+
+#tituloConquistas{
+    font-size: 72px;
+    margin-left: 110px;
+    margin-top: -175px;
+    margin-bottom: 120px;
+    scroll-behavior: none;
+    overflow: hidden;
+    color: #FFF;
+}
+
+#subtituloConquistas{
+    overflow: hidden;
+    margin-top: 102px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#imgCadeado{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#colmeiaBaixo :hover{
+    cursor: pointer;
