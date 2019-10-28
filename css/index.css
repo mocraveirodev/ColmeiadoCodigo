@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #000;
+    border: 1px solid #707070;
+}
+
+header img{
+    width: 250px;
+    height: 100px;
+}
+
+.menu{
+    width: 70%;
+}
+
+.nav-link{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.login{
+    width: 40%;
+}
+
+header .btn{
+    background: #FDCA0C;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFF;
+}
+
+header a{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FDCA0C;
+}
+
+/* BANNER */
+
+#banner{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+}
+
+#banner p{
+    font-weight: 700;
+    font-size: 30px;
+    color: #3D3103;
+}
+
+/* TRILHAS */
+
+#trilhas{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 0px 100px;
+    background-color: #000;
+    border: 1px solid #707070;
+}
+
+#trilhas img{
+    width: 34vw;
+    height: 60vh;
+}
+
+.trilhas p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.trilhas span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#trilhas .trilhas img{
+    width: 30vw;
+    height: 20vh;
+}
+
+/* SOBRE */
+
+#sobre{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background: #FDCA0C;
+    border: 1px solid #707070;
+}
+
+#sobre p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#sobre img{
+    height: 50vh;
+}
+
+/* PLANOS */
+
+#planos{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+    border: 1px solid #707070;
+}
+
+#planos .planos{
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #FDCA0C;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #FFF;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer p{
+    width: 50%;
+}
+
+footer i{
+    font-size: 30px;
+    color: #FFF;
+}
+
+/* menu lateral */
+
+html,body{
+    height: 100%;
+   
+ }
+ 
+ #imagem1{
+    width: 60px;
+    position: relative;
+    top: -30px;
+ }
+ #imagem2{
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+ }
+ 
+ #imagem2:hover{
+    background-color: rgb(204, 204, 35);
+    color:transparent;
+    transition: all 0.2s ease-in-out;
+ }
+ 
+ 
+ #imagem3{
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+      
+ }
+ #imagem3:hover{
+    background-color: rgb(204, 204, 35);
+    color:transparent;
+    transition: all 0.2s ease-in-out;
+ }
+ 
+ 
+ 
+ #imagem4{
+    width: 40px;
+    position: relative;
+    border-radius:10px;
+    cursor: pointer;
+ }
+ #imagem4:hover{
+    background-color: rgb(204, 204, 35);
+    color:transparent;
+    transition: all 0.2s ease-in-out;
+ }
+ 
+ 
+ li{
+    list-style:none;
+    padding: 10px;
+ }
+ 
+ ul{
+    padding: 50px;
+    
+ }
+ 
+ 
+ #principal{
+    background-color: black;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+ }
