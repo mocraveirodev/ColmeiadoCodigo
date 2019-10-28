@@ -403,3 +403,9 @@ footer i{
     cursor: pointer;
     
 }
+
+/* CHAT */
+
+.chat{
+    width: 100%;
+}
