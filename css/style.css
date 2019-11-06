@@ -545,5 +545,88 @@ width: 18vw;
 }
 /* CHAT */
 .chat{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6e299;
+    color: #fff;
+}
+
+.tituloChat{
+    align-items: center;
+}
+
+.tituloChat img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: 90%;
+}
+
+.tituloChat h1{
+    font-size: 54px;
+    overflow: hidden;
+    z-index: 1;
     width: 100%;
+    margin-left: 127px;
+    margin-top: 59px;
+    margin-bottom: 60px;
+}
+
+.chatIcon{
+    width: 94px;
+    overflow: hidden;
+}
+
+.mensagemRecebida {
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.mensagemRecebida p{
+    background: #fddd65;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 0px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+    
+}
+.mensagemEnviada{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.mensagemEnviada p{
+    background: #fddd65;
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 0px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+
+}
+
+.digitarMensagem{
+    background: #d1d1d1;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    position: end;
+
+}
+
+.digitarMensagem p{
+    font-size: 25px;
+    margin: 0;
+    margin-right: 220px;
+}
+
+.sendIcon{
+    width: 60px;
+    margin: 10px;
 }
