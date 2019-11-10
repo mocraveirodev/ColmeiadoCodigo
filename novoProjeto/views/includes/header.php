@@ -1,3 +1,5 @@
+<?php include_once "views/includes/cadastro.php"; ?>
+<?php include_once "views/includes/login.php"; ?>
 <header>
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand ml-5" href="/NewColmeia/projeto"><img width="150" src="views/img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
@@ -21,8 +23,8 @@
                 </li>
             </ul>
             <div class="login text-center p-3">
-                <button class="btn btn-warning my-2 my-sm-0 ml-3 mr-3"><a href="cadastrar.html" class="text-white">cadastrar</a></button>
-                <a href="login.html" class="text-warning ml-5 mr-5">login</a>
+                <button class="btn btn-warning my-2 my-sm-0 ml-3 mr-3" data-toggle="modal" data-target="#modalCadastrar"><a href="#" class="text-white">cadastrar</a></button>
+                <a href="#" class="btn text-warning ml-5 mr-5" data-toggle="modal" data-target="#modalLogar">login</a>
             </div>
         </div>
     </nav>
