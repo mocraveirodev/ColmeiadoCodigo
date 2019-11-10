@@ -22,15 +22,15 @@
         }
 
         private function viewTrilhasHome(){
-            header('Location:/NewColmeia/projeto/#trilhas');
+            header('Location:/ColmeiadoCodigo/#trilhas');
         }
 
         private function viewSobreHome(){
-            header('Location:/NewColmeia/projeto/#sobre');
+            header('Location:/ColmeiadoCodigo/#sobre');
         }
 
         private function viewPlanosHome(){
-            header('Location:/NewColmeia/projeto/#planos');
+            header('Location:/ColmeiadoCodigo/#planos');
         }
     }
 ?>
