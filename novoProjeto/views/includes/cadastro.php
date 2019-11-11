@@ -8,10 +8,16 @@
         </button>          
       </div>
       <div class="modal-body">
-        <div class="modal-main">
-            <button type="button" class="btn btn-primary">Facebook</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Google</button>
-            <h5>ou cadastre-se com</h5>
+        <div id="facegmail" class="row container-fluid justify-content-center">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary">Facebook</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Google</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">
+            <h5 class="fonte-cinza">ou cadastre-se com</h5>
         </div>
         <form action="#" method="post">
             <div class="form-group">
@@ -24,8 +30,8 @@
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" class="form-control" oninput="this.value = this.value.replace((\\d)*([a-z])*([A-Z])*([@#$%])*)"  minlength="8" required>
-                <p>Sua senha deve conter 8 caracteres ou mais e incluir letras, números e símbolos</p>
+                <input type="password" name="senha" id="senha" class="form-control" minlength="8" required>
+                <p class="senha-cinza">Sua senha deve conter 8 caracteres ou mais e incluir letras, números e símbolos</p>
             </div>
 
             <div class="form-group text-center">
@@ -33,7 +39,9 @@
             </div>   
       </div>
       <div class="modal-footer">
-        <h5>Já tem uma conta? <a href="#" data-toggle="modal" data-target="#modalLogar" data-dismiss="modal">Entrar em sua conta!</a></h5>             
+        <div class="row container-fluid justify-content-center">
+            <h5 class="fonte-cinza">Já tem uma conta? <a href="#" data-toggle="modal" data-target="#modalLogar" data-dismiss="modal" class="link">Entrar em sua conta!</a></h5>
+        </div>             
       </div>
     </div>
   </div>

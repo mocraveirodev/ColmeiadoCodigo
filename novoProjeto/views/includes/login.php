@@ -8,10 +8,16 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="modal-main">
-            <button type="button" class="btn btn-primary">Facebook</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Google</button>
-            <h5>ou entre com</h5>
+        <div id="facegmail" class="row container-fluid justify-content-center">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary">Facebook</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Google</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">        
+            <h5 class="fonte-cinza">ou entre com</h5>
         </div>
         <form action="#" method="post">
         <div class="form-group">
@@ -20,15 +26,19 @@
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" class="form-control" oninput="this.value = this.value.replace((\\d)*([a-z])*([A-Z])*([@#$%])*)"  minlength="8" required>
+                <input type="password" name="senha" id="senha" class="form-control" minlength="8" required>
             </div>
             <div class="form-group text-center">
                 <button class="btn-warning" type="submit">Entrar</button>
             </div> 
-            <p>esqueci minha senha!</p>
+            <div class="row container-fluid justify-content-end"> 
+                <h5 class="fonte-cinza">esqueci minha senha!</h5>
+            </div>
       </div>
       <div class="modal-footer">
-        <h5>Não tem uma conta? <a href="#" data-toggle="modal" data-target="#modalCadastrar" data-dismiss="modal">Criar conta!</a></h5>
+        <div class="row container-fluid justify-content-center">
+            <h5 class="fonte-cinza">Não tem uma conta? <a href="#" data-toggle="modal" data-target="#modalCadastrar" data-dismiss="modal" class="link">Criar conta!</a></h5>
+        </div>
       </div>
     </div>
   </div>
