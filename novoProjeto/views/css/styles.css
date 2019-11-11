@@ -153,3 +153,62 @@ footer{
 footer div{
     margin-top: -5vh;
 }
+
+/* MODAL */
+
+.modal-header {
+    border-bottom: none;
+    padding: 1rem;
+}    
+    
+.modal-main {
+    text-align: center;
+}
+
+.modal-content {
+    width: 550px;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #FDCA0C;
+    border-radius: 0;
+}
+
+#facegmail {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.btn-primary {
+    width: 185px;
+    height: 50px;
+    font-size: 25px;
+}
+    
+.btn-danger {
+    width: 185px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.btn-warning {
+    height: 50px;
+    width: 420px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.fonte-cinza {
+    font-size: 17px;
+    color: #8E8D8D;
+}
+
+.senha-cinza {
+    font-size: 12px;
+    color: #8E8D8D;
+}
+
+.link {
+    color: #FDCA0C;
+}

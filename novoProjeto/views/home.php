@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coméia do Código</title>
+    <title>Colméia do Código</title>
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,7 +13,7 @@
 </head>
 <body>
     
-    <?php include_once "views/includes/header.php"; ?>
+    <?php include_once "views/includes/header.php"; ?>    
     <main>
         <section id="banner" >
             <div class="container mt-5 mb-5">
