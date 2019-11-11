@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colméia do Código</title>
+    <title>Coméia do Código</title>
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -13,13 +14,13 @@
 </head>
 <body>
     
-    <?php include_once "views/includes/header.php"; ?>    
+    <?php include_once "views/includes/header.php"; ?>
     <main>
         <section id="banner" >
             <div class="container mt-5 mb-5">
                 <div class="row text-center pt-5">
                     <div class="col-md-5 d-none d-md-block">
-                        <img src="views/img/colmeia.png" class="img-fluid" alt="Imagem de Colmeia">
+                        <img src="views/img/colmeia.svg" class="img-fluid" alt="Imagem de Colmeia">
                     </div>
                     <div class="col-md-7 my-auto">
                         <p class="pt-sm-5">APRENDA. DESENVOLVA. CONSTRUA.</p>
@@ -32,19 +33,20 @@
             <div class="container pt-md-5 pb-5 mb-md-5">
                 <div class="row text-center pt-md-5 mt-5 pl-2 pr-2">
                     <div class="col-5 p-2 my-auto">
-                        <img src="views/img/trilhas.png" class="img-fluid" alt="Imagem das Trilhas">
+                        <img src="views/img/trilhas.svg" class="img-fluid" alt="Imagem das Trilhas">
                     </div>
                     <div class="col-7 p-0 my-auto text-white">
                         <p class="pb-md-5">Aprenda as principais skills utilizadas pelo mercado e alavanque a sua carreira!</p>
                         <p class="text-white"><span>Nossas trilhas de reconhecimento:</span></p>
                         <div class="d-flex flex-row justify-content-center">
-                            <img width="150" src="views/img/front.png" class="img-fluid m-2 d-none d-md-block" alt="Trilha FrontEnd">
-                            <img width="150" src="views/img/back.png" class="img-fluid m-2 d-none d-md-block" alt="Trilha BackEnd">
-                            <div class="card text-white bg-warning mb-3 mr-2 pt-2 d-md-none d-block" style="max-width: 18rem;">
+                            <div class="card text-white bg-warning mb-3 mr-2 align-items-center flex-row">
+                                <img width="150" src="views/img/front.svg" class="img-fluid p-2 d-none d-md-block" alt="Trilha FrontEnd">
                                 <p class="card-text p-2">FrontEnd</p>
                             </div>
-                            <div style="background-color: rgba(222, 170, 12, 0.5);" class="card text-white mb-3 d-md-none d-block" style="max-width: 18rem;">
-                                <p class="card-text p-2">BackEnd<br><span>Em breve</span></p>
+                            <div class="card text-white bg-warning mb-3 align-items-center flex-row border-0">
+                                <img width="150" src="views/img/back.svg" class="img-fluid p-2 d-none d-md-block" alt="Trilha BackEnd">
+                                <p class="card-text p-2 m-0">BackEnd<br><span>Em breve</span></p>
+                                <div class="capa"></div>                                
                             </div>
                         </div>
                     </div>

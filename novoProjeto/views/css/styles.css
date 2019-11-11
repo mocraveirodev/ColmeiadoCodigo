@@ -11,6 +11,15 @@ header {
     font-weight: 700;
 }
 
+header .logo{
+    width: 150px;
+}
+header .profile{
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+
 header .btn{
     font-size: 1em;
     font-weight: 700;
@@ -24,6 +33,14 @@ header .btn{
 @media only screen and (max-width: 992px) {
     .navbar-nav{
         display: none;
+    }
+
+    header .logo{
+        width: 100px;
+    }
+    header .profile{
+        width: 90px;
+        height: 50px;
     }
 
     header {
@@ -60,6 +77,65 @@ header .container {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* MODAL */
+
+.modal-header {
+    border-bottom: none;
+    padding: 1rem;
+}    
+    
+.modal-main {
+    text-align: center;
+}
+
+.modal-content {
+    width: 550px;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #FDCA0C;
+    border-radius: 0;
+}
+
+#facegmail {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.modal .btn-primary {
+    width: 185px;
+    height: 50px;
+    font-size: 25px;
+}
+    
+.modal .btn-danger {
+    width: 185px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.modal .btn-warning {
+    height: 50px;
+    width: 420px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.fonte-cinza {
+    font-size: 17px;
+    color: #8E8D8D;
+}
+
+.senha-cinza {
+    font-size: 12px;
+    color: #8E8D8D;
+}
+
+.link {
+    color: #FDCA0C;
+}
+
 /* BANNER */
 
 #banner p {
@@ -80,9 +156,41 @@ header .container {
     font-weight: 700;
 }
 
+#trilhas .card img{
+    width: 70px;
+    height: 70px;
+}
+
+#trilhas .card{
+    font-size: 0.6em;
+    position: relative;
+    border-radius: 10px;
+}
+
+#trilhas .card .capa {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#trilhas .card .texto {
+    padding: 25% 0 25% 0;
+}
+
 @media only screen and (max-width: 992px) {
     #trilhas p {
         font-size: 0.6em;
+    }
+
+    #trilhas .card img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #trilhas .card{
+        font-size: 1em;
     }
 }
 
@@ -121,7 +229,7 @@ header .container {
 }
 
 #planos .btn{
-    background-color: #000000;
+    background-color: #0F0F0F;
 }
 
 @media only screen and (max-width: 992px) {
@@ -145,70 +253,11 @@ footer{
         font-size: 0.6em;
     }
 
-    footer div{
+    /* footer div{
         margin-top: 0;
-    }
+    } */
 }
 
-footer div{
+/* footer div{
     margin-top: -5vh;
-}
-
-/* MODAL */
-
-.modal-header {
-    border-bottom: none;
-    padding: 1rem;
-}    
-    
-.modal-main {
-    text-align: center;
-}
-
-.modal-content {
-    width: 550px;
-}
-
-.form-control {
-    border: 0;
-    border-bottom: 1px solid #FDCA0C;
-    border-radius: 0;
-}
-
-#facegmail {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.btn-primary {
-    width: 185px;
-    height: 50px;
-    font-size: 25px;
-}
-    
-.btn-danger {
-    width: 185px;
-    height: 50px;
-    font-size: 25px;
-}
-
-.btn-warning {
-    height: 50px;
-    width: 420px;
-    border-radius: 15px;
-    font-size: 25px;
-}
-
-.fonte-cinza {
-    font-size: 17px;
-    color: #8E8D8D;
-}
-
-.senha-cinza {
-    font-size: 12px;
-    color: #8E8D8D;
-}
-
-.link {
-    color: #FDCA0C;
-}
+} */
