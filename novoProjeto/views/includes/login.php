@@ -8,11 +8,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="facegmail" class="row container-fluid justify-content-center">
-            <div class="col-sm">
+        <div id="facegmail" class="d-flex justify-content-center">
+            <div class="col">
                 <button type="button" class="btn btn-primary">Facebook</button>
             </div>
-            <div class="col-sm">
+            <div class="col">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Google</button>
             </div>
         </div>
