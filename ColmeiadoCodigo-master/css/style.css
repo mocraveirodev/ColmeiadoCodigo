@@ -639,3 +639,47 @@ width: 18vw;
     width: 60px;
     margin: 10px;
 }
+
+
+/* Menu Lateral */
+
+.imgMenuLateral {
+    width: 4vw;
+    height: 7vh;
+    background-color: #707070;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.imgMenuLateral:hover{
+    background-color: #FDCA0C;
+}
+
+#menuLateral{
+    align-content: center;
+    padding: 0% !important;
+    margin: 0%;
+}
+
+#fechar{
+    position: absolute;
+    top: 0;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 6vw;
+}
+
+#primeiroMenu{
+    margin-top: 40vh;
+}
+
+#Principal {
+    background: black;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
