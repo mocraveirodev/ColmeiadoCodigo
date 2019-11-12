@@ -24,15 +24,5 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
-        // case "cadastrar-usuario":
-        //     include "controllers/HomeController.php";
-        //     $controller = new HomeController();
-        //     $controller->acao($rotas);
-        // break;
-        // case "login-usuario":
-        //     include "controllers/HomeController.php";
-        //     $controller = new HomeController();
-        //     $controller->acao($rotas);
-        // break;
     }
 ?>
