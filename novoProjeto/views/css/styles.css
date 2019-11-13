@@ -261,7 +261,84 @@ footer{
 /* footer div{
     margin-top: -5vh;
 } */
+}
+/* MODAL */
 
+.modal-header {
+    border-bottom: none;
+    padding: 1rem;
+}    
+    
+.modal-main {
+    text-align: center;
+}
+
+.modal-content {
+    width: 550px;
+    border-radius: 1rem;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #FDCA0C;
+    border-radius: 5px;
+}
+
+#facegmail {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.modal .btn-primary {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+}
+    
+.modal .btn-danger {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+}
+
+.modal .btn-warning {
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.fonte-cinza {
+    font-size: 17px;
+    color: #8E8D8D;
+}
+
+.senha-cinza {
+    font-size: 12px;
+    color: #8E8D8D;
+}
+
+.link {
+    color: #FDCA0C;
+}
+
+@media only screen and (max-width: 992px) {
+    .modal-content {
+        width: 100%;
+   }
+
+   .modal .btn-primary {
+    font-size: 20px;
+    }
+
+    .modal .btn-danger {
+        font-size: 20px;
+    }
+
+    .modal .btn-warning {
+        font-size: 20px;
+    }
+=======
 /* CHAT */
 
 .chatHeader{
@@ -446,4 +523,4 @@ footer{
 
 .bpOnline p{
     color: #F1F1F1;
-}
+ }
