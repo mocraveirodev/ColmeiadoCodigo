@@ -19,7 +19,7 @@
                 <div class="d-flex justify-content-center m-3">        
                     <h5 class="fonte-cinza">ou entre com</h5>
                 </div>
-                <form action="#" method="post">
+                <form action="/ColmeiadoCodigo/area-aluno" method="post">
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" class="form-control" required>

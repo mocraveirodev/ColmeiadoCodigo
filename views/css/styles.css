@@ -20,18 +20,44 @@ header .profile{
     cursor: pointer;
 }
 
+header .dropdown img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header .dropdown .btn:focus{
+    box-shadow: 0 0 0 0;
+}
+
+header .dropdown-toggle::after{
+    border: none;
+}
+
+header .dropdown-menu {
+    height: 90vh;
+    background-color: #000000;
+    font-size: 1em;
+    font-weight: 700;
+    min-width: 0;
+}
+
+header .dropdown-item{
+    padding: 0.25rem 1.5rem 0.25rem 0.8rem;
+}
+
 header .btn{
     font-size: 1em;
     font-weight: 700;
 }
-.navbar {
+header .navbar {
     background-color: #000000;
     border: 1px solid #707070;
     box-shadow: -2px -2px 10px;
 }
 
 @media only screen and (max-width: 992px) {
-    .navbar-nav{
+    header .navbar-nav{
         display: none;
     }
 
@@ -57,7 +83,7 @@ header .container {
     cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+header .bar1,header .bar2,header .bar3 {
     width: 35px;
     height: 5px;
     background-color: rgba(235,192,46,1);
@@ -65,14 +91,14 @@ header .container {
     transition: 0.4s;
 }
 
-.change .bar1 {
+header .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+header .change .bar2 {opacity: 0;}
 
-.change .bar3 {
+header .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -252,12 +278,330 @@ footer{
     footer {
         font-size: 0.6em;
     }
-
-    /* footer div{
-        margin-top: 0;
-    } */
 }
 
-/* footer div{
-    margin-top: -5vh;
-} */
+/* --------------------------------------------------------AREA DO ALUNO-------------------------------------------------------- */
+
+.menuResp{
+    display: none;
+}
+
+#areaDoAluno{
+    background-color: #F8F8F8;
+}
+
+#areaDoAluno .menuNav,#areaDoAluno .conteudo,#areaDoAluno .menuAluno{
+    height: 100vh;
+    position: relative;
+    padding: 0;
+}
+
+/* MENU ESQUERDO */
+
+#areaDoAluno .menu{
+    width: 2.5em;
+    height: 2.5em;
+    margin: 2.5em 1.5em 1.5em 1.5em;
+    cursor: pointer;
+}
+
+#areaDoAluno .menuClose{
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 2.5em;
+    cursor: pointer;
+}
+
+#areaDoAluno .menuEsquerdo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#areaDoAluno .botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#areaDoAluno .navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+#areaDoAluno .btnLateral{
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.5em;
+    background-color: #707070;
+    border-radius: 10px;
+    margin: 1em;
+    cursor: pointer;
+}
+
+#areaDoAluno .ativo{
+    background-color: #FDCA0C;
+    border-radius: 10px;
+}
+
+#areaDoAluno .btnLateral:hover{
+    background-color: #FDCA0C;
+}
+
+@media only screen and (max-width: 992px) {
+    .menuNav, .menuAluno{
+        display: none;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .menuResp{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #000000;
+    }
+
+    .btnResp, .profileResp{
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+    }
+
+    .ativoResp{
+        fill: #FDCA0C;
+    }
+}   
+
+/* CENTRO */
+
+#areaDoAluno .titulo{
+    border-left: 6px solid #FDCA0C;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding-left: 0.1em;
+    font-weight: 700;
+}
+
+#areaDoAluno .cursos{
+    width: 80%;    
+    margin: 8em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#areaDoAluno .html {
+    background-color: #712206;
+}
+
+
+#areaDoAluno .css {
+    background-color: #CC00C4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#areaDoAluno .js {
+    background-color: #0414B0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#areaDoAluno .btnCurso{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 10em;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7em 0 0.7em 0;
+}
+#areaDoAluno .btnBlock{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7em 0 0.7em 0;
+}
+
+#areaDoAluno .block {
+    position: relative;
+    width: 15em;
+}
+
+#areaDoAluno .cadeado {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#areaDoAluno .block:hover .cadeado {
+    opacity: 1;
+}
+
+#areaDoAluno .cadeado img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#areaDoAluno .progresso{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#areaDoAluno .progress,#areaDoAluno .progress-bar{
+    height: 2.5em;
+    width: 60%;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+#areaDoAluno .progressoPorc{
+    width: 60%;
+    text-align: end;
+}
+
+@media only screen and (max-width: 992px) {
+        
+    #areaDoAluno .css,#areaDoAluno .js {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    #areaDoAluno .btnCurso{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 10px;
+        width: 15em;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.7em 0 0.7em 0;
+    }
+    #areaDoAluno .btnBlock{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 10px;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.7em 0 0.7em 0;
+    }
+    
+    #areaDoAluno .block {
+        position: relative;
+        width: 15em;
+    }
+    
+    #areaDoAluno .cadeado {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background: rgb(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+    
+    #areaDoAluno .block:hover .cadeado {
+        opacity: 1;
+    }
+    
+    #areaDoAluno .cadeado img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2em;
+        height: 2em;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+/* MENU DIREITO */
+#areaDoAluno .profile{
+    margin: 1.5em;
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+}
+
+.menuDireito{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.btnAluno{
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.ativoResp{
+    fill: #FDCA0C;
+}

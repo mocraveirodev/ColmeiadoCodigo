@@ -14,16 +14,6 @@
                 case "planos-home":
                     $this->viewPlanosHome();
                 break;
-                // case "cadastrar-usuario":
-                //     include "controllers/HomeController.php";
-                //     $controller = new HomeController();
-                //     $controller->acao($rotas);
-                // break;
-                // case "login-usuario":
-                //     include "controllers/HomeController.php";
-                //     $controller = new HomeController();
-                //     $controller->acao($rotas);
-                // break;
             }
         }
 

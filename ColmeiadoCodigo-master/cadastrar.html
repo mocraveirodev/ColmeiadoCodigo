@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <header class="d-flex align-items-center justify-content-between">
+        <a href="#">
+            <img src="img/logo.png" class="m-3 ml-5" alt="Logo do Site">
+        </a>
+        <div class="menu d-flex justify-content-between">
+            <nav class="">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#trilhas">TRILHAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#planos">PLANOS</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login d-flex justify-content-around">
+                <button class="btn"><a href="cadastrar.html">cadastrar</a></button>
+                <a href="login.html" class="log">login</a>
+            </div>
+        </div>
+    </header>
+    <main id="cadastrar" class="d-flex justify-content-center align-items-center p-5">
+        <form action="cadastrar.html" method="post" class="card p-3">
+            <div class="form-group">
+                <label for="nomeCompleto">Nome completo</label>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" require>
+            </div>            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" require>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" class="form-control" require>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular" class="form-control" maxlength="15" require>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn-amarelo" type="submit">Criar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

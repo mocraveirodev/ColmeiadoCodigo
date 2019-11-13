@@ -19,7 +19,7 @@
                 <div class="d-flex justify-content-center m-3">
                     <h5 class="fonte-cinza">ou cadastre-se com</h5>
                 </div>
-                <form action="#" method="post">
+                <form action="/ColmeiadoCodigo/area-aluno" method="post">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" class="form-control" required>

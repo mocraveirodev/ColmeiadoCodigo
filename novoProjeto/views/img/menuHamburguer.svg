@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.177" height="81" viewBox="0 0 114.177 81">
+  <g id="menuHamburguer" transform="translate(-388 -50)">
+    <g id="Camada_2" data-name="Camada 2" transform="translate(388 50)">
+      <g id="Camada_1" data-name="Camada 1" transform="translate(0 0)">
+        <path id="Caminho_167" data-name="Caminho 167" d="M56.741,16.274H8.408A8.146,8.146,0,0,1,7.643,0h97.448a8.137,8.137,0,0,1,.114,16.274Z" transform="translate(0.737 0)" fill="#0f0f0f"/>
+        <path id="Caminho_168" data-name="Caminho 168" d="M57.077,19.913H105.54a8.137,8.137,0,0,1,0,16.274H8.45a8.137,8.137,0,1,1,0-16.193Q32.78,19.88,57.077,19.913Z" transform="translate(0.499 12.489)" fill="#0f0f0f"/>
+        <path id="Caminho_169" data-name="Caminho 169" d="M56.626,39.851h48.48a8.137,8.137,0,0,1,6.184,13.426,7.877,7.877,0,0,1-6.265,2.767H8.342A8.137,8.137,0,1,1,8.163,39.77H56.626Z" transform="translate(0.885 24.952)" fill="#0f0f0f"/>
+      </g>
+    </g>
+  </g>
+</svg>

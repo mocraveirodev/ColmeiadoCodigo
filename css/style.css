@@ -1,0 +1,632 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #000;
+    border: 1px solid #707070;
+}
+
+header img{
+    width: 250px;
+    height: 100px;
+}
+
+.menu{
+    width: 70%;
+}
+
+.nav-link{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.login{
+    width: 40%;
+}
+
+header .btn a{
+    background: #FDCA0C;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    padding: 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+header .btn a:hover{
+    color: #000;
+    transition: ease-in-out 0.5s;
+}
+
+header a{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FDCA0C;
+}
+
+/*LOGIN*/
+a.log {
+    margin-top: 8px;
+}
+
+/* BANNER */
+
+#banner{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+}
+
+#banner p{
+    font-weight: 700;
+    font-size: 30px;
+    color: #3D3103;
+}
+
+/* TRILHAS */
+
+#trilhas{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 0px 100px;
+    background-color: #000;
+    border: 1px solid #707070;
+}
+
+#trilhas img{
+    width: 34vw;
+    height: 60vh;
+}
+
+.trilhas p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.trilhas span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#trilhas .trilhas img{
+    width: 30vw;
+    height: 20vh;
+}
+
+/* SOBRE */
+
+#sobre{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background: #FDCA0C;
+    border: 1px solid #707070;
+}
+
+#sobre p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#sobre img{
+    height: 50vh;
+}
+
+/* PLANOS */
+
+#planos{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+    border: 1px solid #707070;
+}
+
+#planos .planos{
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #FDCA0C;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #FFF;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer p{
+    width: 50%;
+}
+
+footer i{
+    font-size: 30px;
+    color: #FFF;
+}
+
+/*LOGIN*/
+#login{
+    width: 100vw;
+    height: 100vh;
+    padding: 134px 100px 134px 100px;
+    background-color: #FFF;
+    border: 1px solid #707070;
+}
+
+.btn-amarelo {
+    background: #FDCA0C;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFF;
+    width: 85px;
+    height: 35px;
+}
+
+.btn-amarelo:hover {
+    color: #000;
+    transition: ease-in-out 0.5s;
+}
+
+/*Cadastrar*/
+#cadastrar {
+    margin-top: 110px;
+}
+
+/* Area do Aluno*/
+.areaDoAluno {
+    background-color: #EBEBED;
+    margin: 0;
+
+}
+
+.areaDoAluno h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#abelhaFeliz {
+    width: 9vw;
+    height: 12vh;
+}
+
+.colmeia {
+    background-image: url(../img/areaDoAlunoBG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 4vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding-block-start: 11vh;
+    padding-left: 11vw;
+    padding-block-end: 6vw;
+}
+
+.cursos {
+    margin: 0;
+    padding: 0;
+    margin-top:27px;
+}
+
+.cursos button {
+    width: 15vw;
+    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+.cursos button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cursos button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.cursos button:hover span {
+    padding-right: 25px;
+}
+
+.cursos button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#htmlButton {
+    background-color: #B03204;
+    border-color: #B03204;
+
+}
+
+#htmlButton:hover {
+    background-color: #712206;
+    border-color: #712206;
+}
+
+/* .cursoCss{
+    height: 40px;
+    display: flex;
+    align-items:center;
+} */
+
+/* .cadeadoCss{
+    width:50px;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+} */
+
+/* .cadeadoCss img{
+    width:40px;
+} */
+
+#cssButton{
+    background-color: #cc7ac9;
+    border-color:#cc7ac9;
+    /* z-index: 0;
+    opacity: 0.5;
+    position: absolute; */
+}
+
+#cssButton:hover{
+    background-color:#9f0599;
+    border-color:#9f0599;
+}
+
+.cursoJavaScript{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+/* .cadeadoJS{
+    width: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cadeadoJS img{
+    width: 40px;
+    z-index: 1;
+} */
+#jsButton{
+    background-color:#6169b0;
+    border-color: #6169b0;
+    /* z-index:0;
+    opacity:0.5;
+    position: absolute; */
+}
+#jsButton:hover{
+    background-color:#031299;
+    border-color: #031299;
+}
+
+.metaDiaria{
+    height: 45.9vh;
+    margin-block-start: 10vh;
+    padding-left: 38px;
+}
+
+.metaDiaria p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: #000;
+}
+.progressBar{
+    height: 10vh;
+    width: 60vw;
+    border-radius:25px;
+    background-color: #fff;
+    border-color: #707070;
+    border-style: solid;
+    display: flex;
+}
+
+.progressBar::before{
+    content: "";
+    width: 50%;
+    /* background-image: url(../img/barraDeProgresso.svg);
+    background-repeat: no-repeat;
+    background-size:cover;*/
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #FDCA0C;
+}
+.porcentagemProgresso{
+    text-align: right;
+    padding-right: 2vw;
+}
+.perfil {
+    background: #000000;
+    margin: 0;
+    padding-top: 7px;
+}
+
+.user{
+    margin: 0%;
+    padding:0;
+    color: #fff;
+    align-items: center;
+}
+.user p{
+    font-size: 5vh;
+    padding-right: 17px;
+    padding-top: 12px;
+}
+.user img{
+    width: 5vw;
+}
+.profileOptions{
+padding: 0;
+padding-top: 15px;
+width: 20vw;
+}
+.profileOptions img{
+    width: 3vw;
+}
+.support{
+    align-items: center;
+    height: 95vh;
+    padding-top: 115px;
+}
+
+.support img{
+width: 18vw;
+}
+
+#suporteButton{
+    background-color:#FDCA0C;
+    border-color: #FDCA0C;
+    color: #000000;
+    width: 13vw;
+    font-weight: bold;
+    padding: 0;
+    font-size: 13pt;
+    margin-top: 45px;}
+
+#suporteButton:hover{
+    background-color: #BA950B;
+    border-color:#BA950B;
+}
+
+/*Salão das conquistas*/
+#mainConquistas{
+    background: #FFE277AF;
+    height: 100vh;
+}
+#tituloConquistas{
+    font-size: 3.8vw;
+    position: absolute;
+    left: 1.8em;
+    top: 1.3em;
+    scroll-behavior: none;
+    overflow: hidden;
+    color: #FFF;
+    position: absolute;
+}
+#subtituloConquistas{
+    overflow: hidden;
+    position: relative;
+    top: 0.4em;
+    margin-bottom: 3vh;
+    font-size: 2.3vw;
+    text-align: center;
+}
+#imgCadeado{
+    margin-bottom: 1vh;
+    width: 8vw;
+}
+#colmeiaBaixo :hover{
+    cursor: pointer;    
+}
+#imgColmeia{
+    width: 60vw;
+    cursor: pointer;    
+}
+/* CHAT */
+.chat{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6e299;
+    color: #fff;
+}
+
+.tituloChat{
+    align-items: center;
+}
+
+.tituloChat img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: 90%;
+}
+
+.tituloChat h1{
+    font-size: 54px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    margin-left: 127px;
+    margin-top: 59px;
+    margin-bottom: 60px;
+}
+
+.chatIcon{
+    width: 94px;
+    overflow: hidden;
+}
+
+.mensagemRecebida {
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.mensagemRecebida p{
+    background: #fddd65;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 0px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+    
+}
+.mensagemEnviada{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.mensagemEnviada p{
+    background: #fddd65;
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 0px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+
+}
+
+.digitarMensagem{
+    background: #d1d1d1;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    position: end;
+
+}
+
+.digitarMensagem p{
+    font-size: 25px;
+    margin: 0;
+    margin-right: 220px;
+}
+
+.sendIcon{
+    width: 60px;
+    margin: 10px;
+}
