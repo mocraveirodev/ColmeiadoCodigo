@@ -261,8 +261,7 @@ footer{
 /* footer div{
     margin-top: -5vh;
 } */
-
-
+}
 /* MODAL */
 
 .modal-header {
@@ -339,4 +338,189 @@ footer{
     .modal .btn-warning {
         font-size: 20px;
     }
+=======
+/* CHAT */
+
+.chatHeader{
+    display: flex;
+    flex-direction: row;
 }
+
+.chatTitle{
+    padding: 30px 0 0 120px;
+}
+
+.chatTitle h1{
+    font: Bold 50px Poppins;
+    letter-spacing: 0;
+    color: #0F0F0F;
+    opacity: 1;
+}
+
+.fotoUsuario{
+    margin-left: 720px;
+    margin-top: 10px;
+}
+
+.fotoUsuario img{
+    width: 54px;
+}
+
+.chat{
+    background-color: #F8F8F8AF;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuHamburguer{
+    padding: 15px 0 0 15px;
+}
+.menuHamburguer img{
+    width: 70px;
+}
+
+.mensagemRecebida{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 0 0 0 136px;
+    height: 120px;
+}
+
+.conteudoMensagem p{
+    background-color: #FCDC65;
+    box-shadow: 0px 8px 9px #00000029;
+    border-radius: 47px 47px 47px 0px;
+    opacity: 1;
+    font-size: 25px;
+    font-family: Poppins;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    padding: 10px 30px;
+    margin-left: 20px;
+}
+
+.perfilChat{
+    text-align: center;
+    padding: 35px 0 0 0;
+}
+.perfilChat img{
+    width: 82px;
+}
+
+.perfilChat p{
+    text-align: center;
+    font: Bold 15px Poppins;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.mensagemEnviada{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    place-items: center;
+    padding: 0 30px 0 0;
+    height: 120px;
+}
+
+.conteudoMensagemSend p{
+    background-color: #FCDC65;
+    box-shadow: 0px 8px 9px #00000029;
+    border-radius: 47px 47px 0px 47px;
+    opacity: 1;
+    font-size: 25px;
+    font-family: Poppins;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+.meuPerfilChat{
+    text-align: center;
+    padding: 35px 0 0 0;
+}
+
+.meuPerfilChat img{
+    width: 82px;
+}
+
+.meuPerfilChat p{
+    text-align: center;
+    font: Bold 15px Poppins;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.campoMensagem{
+    display: flex;
+    background-color: #D1D1D1;
+    border: 1px solid #707070;
+    opacity: 1;
+    height: 85px;
+    align-items: center;
+}
+
+.digitarMensagem{
+    width: 90%;
+    text-align: center;
+}
+
+.digitarMensagem p{
+    font-family: Poppins;
+    font-size: 25px;
+    letter-spacing: 0;
+    color: #0F0F0F;
+    opacity: 1;
+}
+
+.botaoDeEnvio{
+    width: 10%;
+    align-items: center;
+}
+
+.botaoDeEnvio img{
+    width: 70px;
+}
+
+
+.dtTeste{
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dtTesteDois{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 14%;
+}
+
+.bpOnline{
+    background-color: #0F0F0F;
+    height: 100vh;
+}
+
+.bpOnline h2{
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #F1F1F1;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.bpOnline p{
+    color: #F1F1F1;
+ }
