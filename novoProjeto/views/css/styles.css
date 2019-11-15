@@ -261,7 +261,7 @@ footer{
 /* footer div{
     margin-top: -5vh;
 } */
-}
+
 /* MODAL */
 
 .modal-header {
@@ -338,6 +338,7 @@ footer{
     .modal .btn-warning {
         font-size: 20px;
     }
+}
 =======
 /* CHAT */
 
