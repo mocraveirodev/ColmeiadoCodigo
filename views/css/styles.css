@@ -1,0 +1,498 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+/* ---------------------------------------------------------HOME--------------------------------------------------------- */
+
+/* HEADER */
+header {
+    height: 10vh;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header .logo{
+    width: 7rem;
+}
+
+.profile{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+header .btn{
+    font-size: 1rem;
+    font-weight: 700;
+}
+header .navbar {
+    background-color: #000000;
+    box-shadow: -2px -2px 10px;
+}
+
+header .container {
+    display: inline-block;
+}
+
+header .bar1,.bar2,.bar3 {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: rgba(235,192,46);
+    margin: 0.4rem 0;
+    transition: 0.4s;
+}
+
+header .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .change .bar2 {opacity: 0;}
+
+header .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+        font-size: 1rem;
+    }
+
+    header .navbar-nav{
+        display: none;
+    }
+}
+
+/* MODAL */
+
+.modal{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal-content {
+    border-radius: 1rem;
+}
+
+.modal-header {
+    border: none;
+    padding: 1rem;
+}
+
+.facegmail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal .btn{
+    width: 40%;    
+    border-radius: 0.5rem;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #C4A400;
+}
+
+.modal .btn-warning {
+    width: 100%;
+}
+
+.modal p {
+    color: #8E8D8D;
+    padding: 0;
+    text-align: center;
+}
+
+.modal .senha{
+    font-size: 0.7rem;
+}
+
+/* BANNER */
+
+#banner p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3D3103;
+}
+
+/* TRILHAS */
+
+#trilhas{
+    background-color: #000000;
+    border: 1px solid #707070;
+}
+
+#trilhas p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#trilhas span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#trilhas .card{
+    position: relative;
+    border-radius: 1rem;
+}
+
+#trilhas .card-text{
+    font-size: 1rem;
+}
+
+#trilhas .card img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.capa {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+}
+
+.texto {
+    font-size: 1rem;
+    padding: 10% 30%;
+}
+
+@media only screen and (max-width: 992px) {
+    #trilhas p {
+        font-size: 0.6rem;
+    }
+
+    #trilhas span{
+        font-size: 0.6rem;
+    }
+
+    #trilhas .card{
+        border-radius: 0.5rem;
+    }
+
+    #trilhas .card img{
+        display: none;
+    }
+
+    #trilhas .card-text{
+        font-size: 0.6rem;
+    }
+
+    .capa{
+        border-radius: 0.5rem;
+    }
+    
+    .texto{
+        padding: 4% 12%;
+        font-size: 0.6rem;
+    }
+}
+
+/* SOBRE */
+
+#sobre{
+    background-color: #FDCA0C;
+    border: 1px solid #707070;
+}
+
+#sobre p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* PLANOS */
+
+#planos{
+    border: 1px solid #707070;
+}
+
+#planos P {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#planos li {
+    color: #000000;
+    font-weight: 600;
+}
+
+#planos .btn{
+    background-color: #0F0F0F;
+}
+
+@media only screen and (max-width: 992px) {
+    #planos .card {
+        font-size: 0.5rem;
+    }
+    
+    #planos .card-header {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    #planos .card-body p {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    #planos .btn{
+        font-size: 0.5rem;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000000;
+    border: 1px solid #707070;
+}
+@media only screen and (max-width: 992px) {
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+/* --------------------------------------------------------AREA DO ALUNO-------------------------------------------------------- */
+
+#areaDoAluno{
+    background-color: #F8F8F8;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menuNav,.conteudo,.menuAluno{
+    height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.menuResp{
+    display: none;
+}
+
+/* MENU ESQUERDO */
+
+.menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.menuEsquerdo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    height: 100%;
+    display: none;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.btnLateral{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    background-color: #707070;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btnLateral:hover{
+    background-color: #FDCA0C;
+}
+
+.ativo{
+    background-color: #FDCA0C;  
+}
+
+/* CENTRO */
+
+.titulo{
+    border-left: 6px solid #FDCA0C;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    padding-left: 0.5rem;
+    font-weight: 700;
+}
+
+.cursos{
+    width: 80%;    
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCurso{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.btnCurso:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btnCurso img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.html {
+    background-color: #712206;
+}
+
+
+.css {
+    background-color: rgba(204, 0, 196, 0.502);
+}
+
+
+.js {
+    background-color: rgb(4, 20, 176,0.5);
+}
+
+.progresso{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.progress,.progress-bar{
+    height: 3rem;
+    width: 80%;
+    border: 1px solid #707070;
+    border-radius: 1rem;
+}
+
+.progressoPorc{
+    width: 80%;
+    text-align: end;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .cursos{
+        flex-direction: column;
+        align-items: center;
+        margin: 15% auto;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .btnCurso{
+        font-size: 1rem;
+        font-weight: 700;
+        width: 50%;
+        margin: 1rem;
+    }
+
+    .btnCurso img{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .progresso{
+        font-size: 1rem;
+    }
+
+    .progress,.progress-bar{
+        height: 2rem;
+        border-radius: 0.5rem;
+    }
+}
+
+/* MENU DIREITO */
+
+.menuAluno .profile{
+    margin: 1.8rem;
+}
+
+.menuDireito{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.btnAluno{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.9rem;
+    cursor: pointer;
+}
+
+.ativoResp{
+    fill: #FDCA0C;
+}
+
+/* MENU RESPONSIVO */
+
+@media only screen and (max-width: 992px) {
+    .menuNav,.menuAluno{
+        display: none;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .menuResp{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #000000;
+    }
+
+    .btnResp, .profileResp{
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+    .ativoResp{
+        fill: #FDCA0C;
+    }
+}
