@@ -27,7 +27,7 @@
                 </div>
             </div>
         </section>
-        <section class="conteudo flex-grow-1">
+        <section class="conteudo flex-grow-1 d-none">
             <h1 class="titulo">Colmeia</h1>
             <div class="cursos">
                 <a href="#" class="btnCurso html">HTML5</a>
@@ -42,6 +42,40 @@
                 <p class="progressoPorc">50%</p>
             </div>
         </section>
+
+        <section>
+        
+            <h1 class="titulo">Salão de Conquistas</h1>
+            <h3 id="subtituloConquistas">O trabalho duro traz doces vitórias, aprecie as suas!</h3>
+
+            <div class="d-flex justify-content-around flex-wrap" id="colmeiaBaixo">
+                <img class="imgCadeado" src="views/img/seloConquista.svg" alt="Conquista desbloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">                  
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">                    
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+                <img class="imgCadeado" src="views/img/conquistaBloqueada.svg" alt="Conquista bloqueada!">
+            </div>
+        
+        </section>
+
+
+
         <section class="menuAluno">
             <img src="views/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
             <div class="menuDireito">

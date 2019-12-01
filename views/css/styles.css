@@ -496,3 +496,47 @@ footer{
         fill: #FDCA0C;
     }
 }
+
+/*Salão das conquistas*/
+
+#subtituloConquistas{   
+    margin-top: 2rem;
+    margin-left: 5rem;
+    padding-left: 0.5rem;
+    font-weight: 700;
+}
+
+.imgCadeado{
+    margin: 2vh;    
+    width: 9vw;
+}
+
+#colmeiaBaixo :hover{
+    cursor: pointer;    
+}
+
+#colmeiaBaixo{
+    padding: 2rem 5rem 0 5rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #subtituloConquistas{   
+        font-size: 1.0rem;
+    }
+
+    .imgCadeado{
+        margin: 2vh;    
+        width: 15vw;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .imgCadeado{
+        margin: 1vh;    
+        width: 25vw;
+    }
+
+}
