@@ -433,6 +433,72 @@ footer{
     }
 }
 
+/* Chat */
+.salaChat {
+    padding: 10px;
+}
+
+.chat.d-flex.flex-row {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.chat.d-flex.flex-row-reverse {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+span.message-person {
+    font-size: 12px;
+}
+
+span.message-profile {
+    font-size: 12px;
+}
+
+.message-colmeia {
+    background-color: #FDCA0C;
+    border-radius: 1rem 1rem 1rem 0;
+    padding: 8px;
+}
+
+.message-logged {
+    background-color: #FDCA0C;
+    border-radius: 1rem 1rem 0 1rem;
+    padding: 8px;
+}
+
+.message-group.col-md-3.d-block {
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
+.participantes.flex-md-column {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 25px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+span.input-group-addon.btn.btn-warning {
+    background-color: #fff;
+    border: none;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #C4A400;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #FDCA0C; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
 /* MENU DIREITO */
 
 .menuAluno .profile{
