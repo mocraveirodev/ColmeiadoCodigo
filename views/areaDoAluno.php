@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="views/css/styles.css">
 </head>
 <body>
@@ -93,7 +97,11 @@
                         </div>                 
                     </div>
                 </div>
-            </div>            
+                <div class="input-group m-15">
+                    <textarea class="form-control custom-control" placeholder="Digite sua mensagem..." rows="3" style="resize:none"></textarea>     
+                    <span class="input-group-addon btn btn-warning"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i></span>
+                </div>
+            </div>                    
         </section>
         <section>
             <div class="participantes flex-md-column">
