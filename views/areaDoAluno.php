@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="views/css/styles.css">
 </head>
 <body>
-    <main id="areaDoAluno" class="d-flex">
+    <main id="areaDoAluno" class="d-flex ">
         <section class="menuNav">
             <img src="views\img\menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
             <div class="menuEsquerdo">
@@ -97,10 +97,11 @@
                         </div>                 
                     </div>
                 </div>
-                <div class="input-group m-15">
-                    <textarea class="form-control custom-control" placeholder="Digite sua mensagem..." rows="3" style="resize:none"></textarea>     
-                    <span class="input-group-addon btn btn-warning"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i></span>
-                </div>
+                
+            </div>
+            <div class="input-group m-15">
+                <textarea class="form-control custom-control" placeholder="Digite sua mensagem..." rows="3" style="resize:none"></textarea>     
+                <span class="input-group-addon btn btn-warning"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i></span>
             </div>                    
         </section>
         <section>
