@@ -27,7 +27,8 @@
                 </div>
             </div>
         </section>
-        <section class="conteudo flex-grow-1">
+        <!-- area do aluno -->
+        <section class="conteudo flex-grow-1 d-none">
             <h1 class="titulo">Colmeia</h1>
             <div class="cursos">
                 <a href="#" class="btnCurso html">HTML5</a>
@@ -41,7 +42,91 @@
                 </div>
                 <p class="progressoPorc">50%</p>
             </div>
+        </section>        
+        
+        <!-- Chat -->
+        <section class="conteudo flex-grow-1">
+            <h1 class="titulo">Chat</h1>
+            <div class="salaChat">
+                <div class="chat d-flex flex-row">
+                    <div class="message-group col-md-3 d-block">
+                        <div class="row justify-content-center">                
+                            <img src="views/img/profileMarcelo.svg" class="profile" alt="Imagem do Marcelo">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="message-person">Marcelo Bras</span>
+                        </div> 
+                    </div>
+                    <div class="message-chat col-md-6">
+                        <div class="row justify-content">
+                            <p class="message-colmeia">Alguém pode me ajudar?</p>
+                        </div>                 
+                    </div>
+                </div>
+                <div class="chat d-flex flex-row">
+                    <div class="message-group col-md-3 d-block">
+                        <div class="row justify-content-center">                
+                            <img src="views/img/profileLuana.svg" class="profile" alt="Imagem da Luana">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="message-person">Luana Silva</span>
+                        </div> 
+                    </div>
+                    <div class="message-chat col-md-6">
+                        <div class="row justify-content">
+                            <p class="message-colmeia">Claro, o que foi?</p>
+                        </div>                 
+                    </div>
+                </div>                
+                <div class="chat d-flex flex-row-reverse">
+                    <div class="message-group col-md-3 d-block">
+                        <div class="row justify-content-center">  
+                            <img src="views/img/profileImg.svg" class="profile" alt="Imagem de Perfil">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="message-profile">Julia Mel</span>
+                        </div>
+                    </div> 
+                    <div class="message-chat col-md-6">
+                        <div class="row justify-content-end">
+                            <p class="message-logged">Oi galera, tudo bem?</p>
+                        </div>                 
+                    </div>
+                </div>
+            </div>            
         </section>
+        <section>
+            <div class="participantes flex-md-column">
+                <h5>Participantes (25)</h5>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+                <p>Mariana Luz</p>
+            </div>
+        </section>
+
         <section class="menuAluno">
             <img src="views/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
             <div class="menuDireito">
@@ -55,7 +140,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>       
+
         <section class="menuResp">
             <a href="/ColmeiadoCodigo/"><img class="btnResp" src="views\img\inicio.svg" alt="Home"></a>
             <a href="#"><img class="btnResp" src="views\img\chat.svg" alt="Chat"></a>
