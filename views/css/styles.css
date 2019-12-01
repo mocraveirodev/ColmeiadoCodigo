@@ -16,8 +16,8 @@ header .logo{
 }
 
 .profile{
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
 }
 
@@ -488,6 +488,13 @@ span.input-group-addon.btn.btn-warning {
     border-bottom: 1px solid #C4A400;
 }
 
+.input-group {
+    position: absolute;
+    display: table;
+    border-collapse: separate;
+    bottom: 0;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -497,6 +504,38 @@ span.input-group-addon.btn.btn-warning {
     border-radius: 10px;
     background: #FDCA0C; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+@media only screen and (max-width: 992px) {
+    .participantes.flex-md-column {
+        display: none;
+    }
+
+    .message-colmeia {
+        font-size: 13px;
+    }
+
+    .message-logged {
+        font-size: 13px;
+    }
+
+    .profile {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    span.message-person {
+        font-size: 10px;
+    }
+
+    span.message-profile {
+        font-size: 10px;
+    }
+
+    .message-group.col-md-3.d-block {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 }
 
 /* MENU DIREITO */
