@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/areaDoAluno', 'AreaDoAlunoController@viewAreaDoAluno');
+Route::get('/chat', "Chat@viewChat");
