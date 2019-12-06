@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Área do Aluno - Colmeia do Código</title>    
+    <title>@yield('titulo')</title>    
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,15 +17,15 @@
 <body>
     <main id="areaDoAluno" class="d-flex ">
         <section class="menuNav">
-            <img src="views\img\menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
+            <img src="{{ url('img/menuHamburguer.svg')}}" alt="Menu" class="menu" onclick="menuNav()">
             <div class="menuEsquerdo">
                 <div class="botoes">
-                    <img src="views\img\fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
+                    <img src="{{ url('img\fechar.svg')}}" alt="Fechar" class="menu" onclick="menuNav()">
                     <div class="navegacao">
-                        <a href="/ColmeiadoCodigo/"><img class="btnLateral" src="views\img\inicio.svg" alt="Home"></a>
-                        <a href="#"><img class="btnLateral ativo" src="views\img\areaDoAluno.svg" alt="Inicio"></a>
-                        <a href="#"><img class="btnLateral" src="views\img\conquistas.svg" alt="Conquistas"></a>
-                        <a href="#"><img class="btnLateral" src="views\img\chat.svg" alt="Chat"></a>
+                        <a href="/ColmeiadoCodigo/"><img class="btnLateral" src="/img/inicio.svg" alt="Home"></a>
+                        <a href="#"><img class="btnLateral ativo" src="/img/areaDoAluno.svg" alt="Inicio"></a>
+                        <a href="#"><img class="btnLateral" src="/img/conquistas.svg" alt="Conquistas"></a>
+                        <a href="#"><img class="btnLateral" src="/img/chat.svg" alt="Chat"></a>
                     </div>
                 </div>
             </div>
@@ -34,32 +34,32 @@
         <main class="container">
             <!-- Conteúdo do site -->
             <div class="row">
-               <section class="col-md-2">
+               <section class="col-md-1">
                     <!-- Menu lateral esquerdo aqui vai o include -->
                     <section class="menuResp">
-                        <a href="/ColmeiadoCodigo/"><img class="btnResp" src="views\img\inicio.svg" alt="Home"></a>
-                        <a href="#"><img class="btnResp" src="views\img\chat.svg" alt="Chat"></a>
-                        <a href="#"><img class="btnResp ativoResp" src="views\img\areaDoAluno.svg" alt="Inicio"></a>
-                        <a href="#"><img class="btnResp" src="views\img\conquistas.svg" alt="Conquistas"></a>
-                        <img src="views/img/profileImg.svg" class="profileResp" alt="Imagem de Perfil" onclick="menuAluno()">
+                        <a href="/ColmeiadoCodigo/"><img class="btnResp" src="public\img\inicio.svg" alt="Home"></a>
+                        <a href="#"><img class="btnResp" src="/public\img\chat.svg" alt="Chat"></a>
+                        <a href="#"><img class="btnResp ativoResp" src="public\img\areaDoAluno.svg" alt="Inicio"></a>
+                        <a href="#"><img class="btnResp" src="public\img\conquistas.svg" alt="Conquistas"></a>
+                        <img src="public/img/profileImg.svg" class="profileResp" alt="Imagem de Perfil" onclick="menuAluno()">
                     </section>
                </section>
-               <section class="col-md-8">
+               <section class="col-md-10">
                 <!-- Conteúdo aqui vai o include-->
                 @yield ('conteudo')
                </section>
-               <section class="col-md-2">
+               <section class="col-md-1">
                     <!-- Menu lateral direito aqui vai o include-->
                     <section class="menuAluno">
-                        <img src="views/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
+                        <img src="/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
                         <div class="menuDireito">
                             <div class="botoes">
-                                <img src="views/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
+                                <img src="/img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
                                 <div class="navegacao">
-                                    <a href="#" ><img class="btnAluno" src="views\img\notificacaoAtivo.svg" alt="Notificação"></a>
-                                    <a href="#" ><img class="btnAluno" src="views\img\chatNotificacao.svg" alt="Chat"></a>
-                                    <a href="#" ><img class="btnAluno" src="views\img\configuracoes.svg" alt="Configurações"></a>
-                                    <a href="#" ><img class="btnAluno" src="views\img\ajuda.svg" alt="Ajuda"></a>
+                                    <a href="#" ><img class="btnAluno" src="/img/notificacaoAtivo.svg" alt="Notificação"></a>
+                                    <a href="#" ><img class="btnAluno" src="/img/chatNotificacao.svg" alt="Chat"></a>
+                                    <a href="#" ><img class="btnAluno" src="/img/configuracoes.svg" alt="Configurações"></a>
+                                    <a href="#" ><img class="btnAluno" src="/img/ajuda.svg" alt="Ajuda"></a>
                                 </div>
                             </div>
                         </div>
