@@ -17,15 +17,15 @@
 <body>
     <main id="areaDoAluno" class="d-flex ">
         <section class="menuNav">
-            <img src="views\img\menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
+            <img src="public\img\menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
             <div class="menuEsquerdo">
                 <div class="botoes">
-                    <img src="views\img\fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
+                    <img src="public\img\fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
                     <div class="navegacao">
-                        <a href="/ColmeiadoCodigo/"><img class="btnLateral" src="views\img\inicio.svg" alt="Home"></a>
-                        <a href="#"><img class="btnLateral ativo" src="views\img\areaDoAluno.svg" alt="Inicio"></a>
-                        <a href="#"><img class="btnLateral" src="views\img\conquistas.svg" alt="Conquistas"></a>
-                        <a href="#"><img class="btnLateral" src="views\img\chat.svg" alt="Chat"></a>
+                        <a href="/ColmeiadoCodigo/"><img class="btnLateral" src="public\img\inicio.svg" alt="Home"></a>
+                        <a href="#"><img class="btnLateral ativo" src="public\img\areaDoAluno.svg" alt="Inicio"></a>
+                        <a href="#"><img class="btnLateral" src="public\img\conquistas.svg" alt="Conquistas"></a>
+                        <a href="#"><img class="btnLateral" src="public\img\chat.svg" alt="Chat"></a>
                     </div>
                 </div>
             </div>
