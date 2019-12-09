@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AreaDoAlunoController extends Controller
+class AlunoController extends Controller
 {
     //
     public function viewAreaDoAluno(Request $request){

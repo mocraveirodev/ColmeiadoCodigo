@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/areaDoAluno', 'AreaDoAlunoController@viewAreaDoAluno');
-Route::get('/chat', "Chat@viewChat");
+Route::get('/areaDoAluno', 'AlunoController@viewAreaDoAluno');
+Route::get('/chat', "ChatController@viewChat");
