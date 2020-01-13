@@ -32,7 +32,7 @@
             </div>
         </section>
         <!-- area do aluno -->
-        <section class="conteudo flex-grow-1 d-none">
+        <section class="conteudo flex-grow-1">
             <h1 class="titulo">Colmeia</h1>
             <div class="cursos">
                 <a href="#" class="btnCurso html">HTML5</a>
@@ -49,7 +49,7 @@
         </section>        
         
         <!-- Chat -->
-        <section class="conteudo flex-grow-1">
+        <section class="conteudo flex-grow-1 d-none">
             <h1 class="titulo">Chat</h1>
             <div class="salaChat">
                 <div class="chat d-flex flex-row">

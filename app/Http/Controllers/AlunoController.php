@@ -8,6 +8,6 @@ class AlunoController extends Controller
 {
     //
     public function viewAreaDoAluno(Request $request){
-        return view('areaDoAluno');
+        return view('colmeia');
     }
 }

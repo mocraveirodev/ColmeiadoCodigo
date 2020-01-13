@@ -15,5 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/', 'HomeController@viewHome');
+Route::get('/home', 'HomeController@viewHome');
 Route::get('/areaDoAluno', 'AlunoController@viewAreaDoAluno');
 Route::get('/chat', "ChatController@viewChat");

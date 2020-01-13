@@ -1,4 +1,4 @@
-@extends('layouts.templateColmeia')
+@extends('layouts.areaDoAluno')
 
 @section('titulo')
     Chat
