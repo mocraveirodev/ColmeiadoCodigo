@@ -2,6 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+
 /* ---------------------------------------------------------HOME--------------------------------------------------------- */
 
 /* HEADER */
@@ -118,22 +119,26 @@ header .navbar-collapse{
 
 /* HOME */
 
-main section{
+#home section{
     padding: 10vh 0;
 }
 
-main .row{
-    padding: 5rem 0;
+#home .row{
+    padding: 5rem 1rem;
     text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
-    main section{
+    #home section{
         padding: 0;
     }
 }
 
 /* BANNER */
+
+#banner{
+    padding-top: 10vh;
+}
 
 #banner p {
     font-size: 1.5rem;
@@ -222,6 +227,7 @@ main .row{
 #sobre{
     background-color: #FDCA0C;
     border: 1px solid #707070;
+    padding-bottom: 15vh;
 }
 
 #sobre p {
@@ -288,6 +294,7 @@ footer{
     background-color: #F8F8F8;
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
 .menuNav,.conteudo,.menuAluno{

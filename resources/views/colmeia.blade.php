@@ -1,11 +1,11 @@
 @extends('layouts.areaDoAluno')
 
 @section('titulo')
-    Página Área do Aluno
+    Área do Aluno - Colmeia
 @endsection
 
 @section('conteudo')
-    <section class="conteudo flex-grow-1 ">
+    <section class="conteudo flex-grow-1">
         <h1 class="titulo">Colmeia</h1>
         <div class="cursos">
             <a href="#" class="btnCurso html">HTML5</a>

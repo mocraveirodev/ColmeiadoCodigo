@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main id="areaDoAluno" class="d-flex ">
+    <main id="areaDoAluno">
         <section class="menuNav">
             <img src="img/menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
             <div class="menuEsquerdo">
                 <div class="botoes">
-                    <img src="img\fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
+                    <img src="img/fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
                     <div class="navegacao">
                         <a href="/home"><img class="btnLateral" src="img/inicio.svg" alt="Home"></a>
                         <a href="#"><img class="btnLateral ativo" src="img/areaDoAluno.svg" alt="Inicio"></a>
@@ -32,45 +32,31 @@
                 </div>
             </div>
         </section>
-        
-        <main class="container">
-            <!-- Conteúdo do site -->
-            <div class="row">
-               <section class="col-md-1">
-                    <!-- Menu lateral esquerdo aqui vai o include -->
-                    <section class="menuResp">
-                        <a href="/home"><img class="btnResp" src="img\inicio.svg" alt="Home"></a>
-                        <a href="#"><img class="btnResp" src="img\chat.svg" alt="Chat"></a>
-                        <a href="#"><img class="btnResp ativoResp" src="img\areaDoAluno.svg" alt="Inicio"></a>
-                        <a href="#"><img class="btnResp" src="img\conquistas.svg" alt="Conquistas"></a>
-                        <img src="img/profileImg.svg" class="profileResp" alt="Imagem de Perfil" onclick="menuAluno()">
-                    </section>
-               </section>
-               <section class="col-md-10">
-                <!-- Conteúdo aqui vai o include-->
-                @yield ('conteudo')
-               </section>
-               <section class="col-md-1">
-                    <!-- Menu lateral direito aqui vai o include-->
+
+        @yield ('conteudo')
+
+        <section class="menuAluno">
+            <img src="img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
+            <div class="menuDireito">
+                <div class="botoes">
                     <img src="img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
-                    <section class="menuDireito">
-                        <div class="menuDireito">
-                            <div class="botoes">
-                                <img src="img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
-                                <div class="navegacao">
-                                    <a href="#" ><img class="btnAluno" src="img/notificacaoAtivo.svg" alt="Notificação"></a>
-                                    <a href="#" ><img class="btnAluno" src="img/chatNotificacao.svg" alt="Chat"></a>
-                                    <a href="#" ><img class="btnAluno" src="img/configuracoes.svg" alt="Configurações"></a>
-                                    <a href="#" ><img class="btnAluno" src="img/ajuda.svg" alt="Ajuda"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>             
-                </section>
-
+                    <div class="navegacao">
+                        <a href="#" ><img class="btnAluno" src="img/notificacaoAtivo.svg" alt="Notificação"></a>
+                        <a href="#" ><img class="btnAluno" src="img/chatNotificacao.svg" alt="Chat"></a>
+                        <a href="#" ><img class="btnAluno" src="img/configuracoes.svg" alt="Configurações"></a>
+                        <a href="#" ><img class="btnAluno" src="img/ajuda.svg" alt="Ajuda"></a>
+                    </div>
+                </div>
             </div>
-        </main>
+        </section>
 
+        <section class="menuResp">
+            <a href="/home"><img class="btnResp" src="img/inicio.svg" alt="Home"></a>
+            <a href="#"><img class="btnResp" src="img/chat.svg" alt="Chat"></a>
+            <a href="#"><img class="btnResp ativoResp" src="img/areaDoAluno.svg" alt="Inicio"></a>
+            <a href="#"><img class="btnResp" src="img/conquistas.svg" alt="Conquistas"></a>
+            <img src="img/profileImg.svg" class="profileResp" alt="Imagem de Perfil" onclick="menuAluno()">
+        </section>
         
     </main>
 

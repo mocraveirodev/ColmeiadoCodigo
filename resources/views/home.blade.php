@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <main>
+    <main id="home">
         <section id="banner" >
             <div class="container">
                 <div class="row text-center pt-5">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section id="sobre" class="text-center p-5 d-none d-md-block">
+        <section id="sobre" class="text-center d-none d-md-block">
             <p class="text-white pt-md-5 pb-md-5 mt-md-5">CONHEÇA O PROJETO:</p>
             <p class="text-center pt-5 pb-5">
                 <i class="fas fa-fw fa-quote-left text-white"></i>
@@ -76,8 +76,8 @@
                 <i class="fas fa-fw fa-quote-right text-white"></i>
             </p>
         </section>
-        <section id="planos" class="pt-5 pb-5">
-            <p class="text-center pt-md-5 pb-md-5 mt-md-5 mb-md-5">NOSSOS PLANOS:</p>
+        <section id="planos">
+            <p class="text-center p-4 m-0">NOSSOS PLANOS:</p>
             <div class="d-flex justify-content-around align-items-baseline ml-2 mr-2 mb-md-5">
                 <div class="card bg-warning mb-3 mr-2" style="max-width: 18rem;">
                     <div class="card-header text-center">GRATUITO</div>

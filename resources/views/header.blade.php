@@ -1,6 +1,6 @@
 <?php 
     // "email"=>"monica@email.com","senha"=>'$2y$10$WXI2Yxl3jO1uS4sORvYiJu/LSMi8d4MS3/2VJm0u9tod82HKTUH9u'
-    $usuario = ["email"=>"monica@email.com","senha"=>'$2y$10$WXI2Yxl3jO1uS4sORvYiJu/LSMi8d4MS3/2VJm0u9tod82HKTUH9u'];
+    $usuario = [];
     
     // include_once "views/includes/cadastro.php";
     // include_once "views/includes/login.php";
@@ -10,7 +10,7 @@
 <header>
 @if (isset($usuario) && $usuario != [])
     <nav class="navbar navbar-expand-lg fixed-top p-0">
-        <a class="navbar-brand ml-5" href="/home"><img class="logo" src="img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
+        <a class="navbar-brand ml-5" href="/"><img class="logo" src="img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
         <ul class="navbar-nav mr-auto ml-5">
             <li class="nav-item">
                 <a class="nav-link text-white" href="#trilhas">TRILHAS</a>
@@ -35,7 +35,7 @@
     </nav>
 @else
     <nav class="navbar navbar-expand-lg fixed-top p-0">
-        <a class="navbar-brand ml-5 p-2" href="/home"><img class="logo" src="img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
+        <a class="navbar-brand ml-5 p-2" href="/"><img class="logo" src="img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
             <div class="container" onclick="menuChange(this)">
                 <div class="bar1"></div>
