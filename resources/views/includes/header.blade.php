@@ -22,13 +22,13 @@
                 <a class="nav-link text-white" href="#planos">PLANOS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="/areaDoAluno">COLMEIA</a>
+                <a class="nav-link text-white" href="/colmeia">COLMEIA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="/areaDoAluno">CONQUISTAS</a>
+                <a class="nav-link text-white" href="/colmeia">CONQUISTAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="/areaDoAluno">CHAT</a>
+                <a class="nav-link text-white" href="/colmeia">CHAT</a>
             </li>
         </ul>
         <img src="img/profileImg.svg" class="profile mr-3" alt="Imagem de Perfil" onclick="menuAluno()">
@@ -70,7 +70,7 @@
         if(window.innerWidth >= 992){
             $(".menuDireito").toggle();
         }else{
-            window.location.href = "/areaDoAluno";
+            window.location.href = "/colmeia";
         }
     }
 </script>

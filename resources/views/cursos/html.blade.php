@@ -1,8 +1,6 @@
 @extends('layouts.areaDoAluno')
 
-@section('titulo')
-    Página Área do Aluno
-@endsection
+@section('titulo', 'Área do Aluno - HTML')
 
 @section('conteudo')
 <!-- colocar aulas -->

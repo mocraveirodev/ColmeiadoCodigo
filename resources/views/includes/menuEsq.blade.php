@@ -4,10 +4,10 @@
         <div class="botoes">
             <img src="img/fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
             <div class="navegacao">
-                <a href="/home"><img class="btnLateral" src="img/inicio.svg" alt="Home"></a>
-                <a href="#"><img class="btnLateral ativo" src="img/areaDoAluno.svg" alt="Inicio"></a>
-                <a href="#"><img class="btnLateral" src="img/conquistas.svg" alt="Conquistas"></a>
-                <a href="#"><img class="btnLateral" src="img/chat.svg" alt="Chat"></a>
+                <a href="/"><img class="btnLateral" src="img/inicio.svg" alt="Home"></a>
+                <a href="/colmeia"><img class="btnLateral ativo" src="img/areaDoAluno.svg" alt="Inicio"></a>
+                <a href="/conquistas"><img class="btnLateral" src="img/conquistas.svg" alt="Conquistas"></a>
+                <a href="/chat"><img class="btnLateral" src="img/chat.svg" alt="Chat"></a>
             </div>
         </div>
     </div>

@@ -1,8 +1,7 @@
 @extends('layouts.areaDoAluno')
 
-@section('titulo')
-    Chat
-@endsection
+@section('titulo', 'Área do Aluno - Chat')
+
 @section('conteudo')
 <section class="conteudo flex-grow-1">
             <h1 class="titulo">Chat</h1>

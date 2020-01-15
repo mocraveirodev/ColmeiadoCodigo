@@ -1,14 +1,14 @@
 @extends('layouts.areaDoAluno')
 
-@section('titulo','Área do Aluno - Colmeia')
+@section('titulo', 'Área do Aluno - Colmeia')
 
 @section('conteudo')
     <section class="conteudo flex-grow-1">
         <h1 class="titulo">Colmeia</h1>
         <div class="cursos">
-            <a href="#" class="btnCurso html">HTML5</a>
-            <a href="#" class="btnCurso css"><img src="/img/cadeado.svg" alt="Cadeado"> CSS</a>
-            <a href="#" class="btnCurso js"><img src="/img/cadeado.svg" alt="Cadeado"> JAVASCRIPT</a>
+            <a href="/html" class="btnCurso html">HTML5</a>
+            <a href="/css" class="btnCurso css"><img src="/img/cadeado.svg" alt="Cadeado"> CSS</a>
+            <a href="/js" class="btnCurso js"><img src="/img/cadeado.svg" alt="Cadeado"> JAVASCRIPT</a>
         </div>
         <div class="progresso">
             <p>Meta Diária</p>

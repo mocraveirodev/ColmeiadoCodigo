@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ChatController extends Controller
 {
-    public function viewChat(Request $request) {
-        return view('chat');
-    }
+    // public function viewChat(Request $request) {
+    //     return view('chat');
+    // }
 }
