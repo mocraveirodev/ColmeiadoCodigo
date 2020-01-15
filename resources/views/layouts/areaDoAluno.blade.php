@@ -18,45 +18,13 @@
 </head>
 <body>
     <main id="areaDoAluno">
-        <section class="menuNav">
-            <img src="img/menuHamburguer.svg" alt="Menu" class="menu" onclick="menuNav()">
-            <div class="menuEsquerdo">
-                <div class="botoes">
-                    <img src="img/fechar.svg" alt="Fechar" class="menu" onclick="menuNav()">
-                    <div class="navegacao">
-                        <a href="/home"><img class="btnLateral" src="img/inicio.svg" alt="Home"></a>
-                        <a href="#"><img class="btnLateral ativo" src="img/areaDoAluno.svg" alt="Inicio"></a>
-                        <a href="#"><img class="btnLateral" src="img/conquistas.svg" alt="Conquistas"></a>
-                        <a href="#"><img class="btnLateral" src="img/chat.svg" alt="Chat"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('includes.menuEsq')
 
         @yield ('conteudo')
 
-        <section class="menuAluno">
-            <img src="img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
-            <div class="menuDireito">
-                <div class="botoes">
-                    <img src="img/profileImg.svg" class="profile" alt="Imagem de Perfil" onclick="menuAluno()">
-                    <div class="navegacao">
-                        <a href="#" ><img class="btnAluno" src="img/notificacaoAtivo.svg" alt="Notificação"></a>
-                        <a href="#" ><img class="btnAluno" src="img/chatNotificacao.svg" alt="Chat"></a>
-                        <a href="#" ><img class="btnAluno" src="img/configuracoes.svg" alt="Configurações"></a>
-                        <a href="#" ><img class="btnAluno" src="img/ajuda.svg" alt="Ajuda"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('includes.menuDir')
 
-        <section class="menuResp">
-            <a href="/home"><img class="btnResp" src="img/inicio.svg" alt="Home"></a>
-            <a href="#"><img class="btnResp" src="img/chat.svg" alt="Chat"></a>
-            <a href="#"><img class="btnResp ativoResp" src="img/areaDoAluno.svg" alt="Inicio"></a>
-            <a href="#"><img class="btnResp" src="img/conquistas.svg" alt="Conquistas"></a>
-            <img src="img/profileImg.svg" class="profileResp" alt="Imagem de Perfil" onclick="menuAluno()">
-        </section>
+        @include('includes.menuResp')
         
     </main>
 

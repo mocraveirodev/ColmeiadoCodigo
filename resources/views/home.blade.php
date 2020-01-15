@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    @include('header')
+    @include('includes.header')
 
     <div class="menuDireito">
         <div class="botoes">

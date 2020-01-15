@@ -5,8 +5,8 @@
     // include_once "views/includes/cadastro.php";
     // include_once "views/includes/login.php";
 ?>
-@include('cadastro')
-@include('login')
+@include('includes.cadastro')
+@include('includes.login')
 <header>
 @if (isset($usuario) && $usuario != [])
     <nav class="navbar navbar-expand-lg fixed-top p-0">
