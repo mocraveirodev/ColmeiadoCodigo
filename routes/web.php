@@ -15,8 +15,8 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'HomeController@viewHome');
-Route::get('/home', 'HomeController@viewHome');
+Route::get('/', 'IndexController@viewHome');
+Route::get('/home', 'IndexController@viewHome');
 Route::get('/colmeia', 'AlunoController@viewColmeia');
 Route::get('/chat', "AlunoController@viewChat");
 Route::get('/conquistas', "AlunoController@viewConquistas");
@@ -26,3 +26,5 @@ Route::get('/ajuda', "AlunoController@viewConquistas");
 Route::get('/html','AlunoController@viewHtml');
 Route::get('/css','AlunoController@viewCss');
 Route::get('/js','AlunoController@viewJs');
+
+Auth::routes();
