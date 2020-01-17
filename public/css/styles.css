@@ -136,7 +136,7 @@ header .navbar-collapse{
 
 /* BANNER */
 
-#banner{
+#banner .container{
     padding-top: 10vh;
 }
 
