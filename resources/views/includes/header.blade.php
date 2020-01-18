@@ -5,10 +5,10 @@
     // include_once "cadastro.php";
     // include_once "login.php";
 ?>
+    @include('auth.login')
     @include('includes.cadastro')
-    @include('includes.login')
 <header>
-@if (isset($usuario) && $usuario != [])
+@if (auth()->user() && auth()->user() != [])
     <nav class="navbar navbar-expand-lg fixed-top p-0">
         <a class="navbar-brand ml-5" href="/"><img class="logo" src="img/logo horizontal.png" alt="Logo Colmeia do Código"></a>
         <ul class="navbar-nav mr-auto ml-5">

@@ -13,10 +13,11 @@
                     <button type="button" class="btn btn-danger">Google</button>
                 </div>
                 <p class="m-3">ou cadastre-se com</p>
-                <form action="/ColmeiadoCodigo/area-aluno" method="post">
+                <form action="{{ route('register') }}" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" class="form-control" required>
+                        <input type="text" name="name" id="nome" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
@@ -24,7 +25,12 @@
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" class="form-control" minlength="8" required>
+                        <input type="password" name="password" id="senha" class="form-control" minlength="8" required>
+                        <p class="senha">Sua senha deve ter no mínimo 8 caracteres e incluir letras, números e símbolos</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Confirme a Senha</label>
+                        <input type="password" name="password_confirmation" id="senha" class="form-control" minlength="8" required>
                         <p class="senha">Sua senha deve ter no mínimo 8 caracteres e incluir letras, números e símbolos</p>
                     </div>
                     <button class="btn btn-warning" type="submit">Comece a aprender agora!</button>

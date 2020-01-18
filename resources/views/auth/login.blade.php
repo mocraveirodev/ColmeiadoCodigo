@@ -1,4 +1,4 @@
-<div class="modal fade" id="modalLogar" tabindex="-1" role="dialog" aria-labelledby="logarUsuario" aria-hidden="true">
+<div class="modal" id="modalLogar" tabindex="-1" role="dialog" aria-labelledby="logarUsuario" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -13,11 +13,11 @@
                     <button type="button" class="btn btn-danger">Google</button>
                 </div>
                 <p class="m-3">ou entre com</p>
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login') }}" class="abc">
                     @csrf
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input type="email"id="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -57,8 +57,9 @@
                         @endif                           
                     </div>
                 </form>                
-            <div class="modal-footer justify-content-center">
-                <p>Não tem uma conta? <a href="#" data-toggle="modal" data-target="#modalCadastrar" data-dismiss="modal" class="text-warning">Criar conta!</a></p>
+                <div class="modal-footer justify-content-center">
+                    <p>Não tem uma conta? <a href="#" data-toggle="modal" data-target="#modalCadastrar" data-dismiss="modal" class="text-warning">Criar conta!</a></p>
+                </div>
             </div>
         </div>
     </div>
