@@ -17,26 +17,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    {{ print_r($errors->all()) }}
+    <!-- {{ print_r($errors->all()) }}
     @if(!empty($errors->all()))
         @foreach ($errors->all() as $error)
             <div>{{ $error }}</div>
         @endforeach
-    @endif
+    @endif -->
     @include('includes.header')
 
-    <div class="menuDireito">
-        <div class="botoes">
-            <img src="img/profileImg.svg" class="profile mr-3" alt="Imagem de Perfil" onclick="menuAluno()">
-            <div class="navegacao">
-                <a href="/notificacao" ><img class="btnAluno" src="img/notificacaoAtivo.svg" alt="Notificação"></a>
-                <a href="/chat" ><img class="btnAluno" src="img/chatNotificacao.svg" alt="Chat"></a>
-                <a href="/config" ><img class="btnAluno" src="img/configuracoes.svg" alt="Configurações"></a>
-                <a href="/ajuda" ><img class="btnAluno" src="img/ajuda.svg" alt="Ajuda"></a>
-                <form method="post" action="{{ route('logout') }}" > @csrf <button type="submit" class="btn text-warning">logout</button></form>
-            </div>
-        </div>
-    </div>
+    @include('includes.menuDir')
+
     <main id="home">
         <section id="banner" >
             <div class="container">

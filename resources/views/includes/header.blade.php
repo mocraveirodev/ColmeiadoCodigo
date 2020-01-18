@@ -1,12 +1,6 @@
-<?php 
-    // "email"=>"monica@email.com","senha"=>'$2y$10$WXI2Yxl3jO1uS4sORvYiJu/LSMi8d4MS3/2VJm0u9tod82HKTUH9u'
-    $usuario = [];
-    
-    // include_once "cadastro.php";
-    // include_once "login.php";
-?>
-    @include('auth.login')
-    @include('includes.cadastro')
+@include('auth.login')
+@include('auth.register')
+
 <header>
 @if (auth()->user() && auth()->user() != [])
     <nav class="navbar navbar-expand-lg fixed-top p-0">
