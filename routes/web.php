@@ -26,5 +26,13 @@ Route::get('/ajuda', "AlunoController@viewConquistas");
 Route::get('/html','AlunoController@viewHtml');
 Route::get('/css','AlunoController@viewCss');
 Route::get('/js','AlunoController@viewJs');
+Route::get('/variavel','CursoController@viewVariavel');
+Route::get('/quiz_variavel','CursoController@viewQuizVariavel');
+Route::get('/variavel_int','CursoController@viewVariavelInt');
+Route::get('/quiz_variavel_int','CursoController@viewQuizVariavelInt');
+Route::get('/variavel_float','CursoController@viewVariavelFloat');
+Route::get('/quiz_variavel_float','CursoController@viewQuizVariavelFloat');
+Route::get('/variavel_string','CursoController@viewVariavelString');
+Route::get('/quiz_variavel_string','CursoController@viewQuizVariavelString');
 
 Auth::routes();
