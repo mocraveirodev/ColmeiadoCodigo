@@ -34,7 +34,7 @@
                         @enderror
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-6 offset-md-4">
+                        <div class="col-md-12 d-flex justify-content-around">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -42,6 +42,11 @@
                                     {{ __('Lembrar Senha') }}
                                 </label>
                             </div>
+                            @if (Route::has('password.request'))
+                                <a class="text-warning" href="{{ route('password.request') }}">
+                                    {{ __('Esqueci minha senha!') }}
+                                </a>
+                            @endif
                         </div>
                     </div>
 
@@ -49,12 +54,6 @@
                         <button type="submit" class="btn btn-warning">
                             {{ __('Entrar') }}
                         </button>
-
-                        @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
-                                {{ __('Esqueci minha senha!') }}
-                            </a>
-                        @endif                           
                     </div>
                 </form>                
                 <div class="modal-footer justify-content-center">
