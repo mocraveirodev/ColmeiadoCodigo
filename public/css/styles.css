@@ -5,6 +5,23 @@ body {
 
 /* ---------------------------------------------------------HOME--------------------------------------------------------- */
 
+/* HOME */
+
+#home section{
+    padding: 10vh 0;
+}
+
+#home .row{
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    #home section{
+        padding: 0;
+    }
+}
+
 /* HEADER */
 
 header .navbar {
@@ -115,23 +132,6 @@ header .navbar-collapse{
 
 .modal .senha{
     font-size: 0.7rem;
-}
-
-/* HOME */
-
-#home section{
-    padding: 10vh 0;
-}
-
-#home .row{
-    padding: 5rem 1rem;
-    text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-    #home section{
-        padding: 0;
-    }
 }
 
 /* BANNER */
@@ -290,6 +290,8 @@ footer{
 
 /* --------------------------------------------------------AREA DO ALUNO-------------------------------------------------------- */
 
+/* ÁREA ALUNO */
+
 #areaDoAluno{
     background-color: #F8F8F8;
     width: 100vw;
@@ -359,14 +361,88 @@ footer{
     background-color: #FDCA0C;  
 }
 
+/* MENU DIREITO */
+
+.menuDireito{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menuAluno .profile{
+    margin: 1.9rem;
+}
+
+.btnAluno{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.9rem;
+    cursor: pointer;
+}
+
+.ativoResp{
+    fill: #FDCA0C;
+}
+
+/* MENU RESPONSIVO */
+
+@media only screen and (max-width: 992px) {
+    .menuNav,.menuAluno{
+        display: none;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .menuResp{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #000000;
+    }
+
+    .btnResp, .profileResp{
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+    .ativoResp{
+        fill: #FDCA0C;
+    }
+}
+
 /* CONTEUDO */
 
 .titulo{
     border-left: 6px solid #FDCA0C;
+}
+
+.titulo, .subtitulo{   
     margin-top: 2rem;
     margin-left: 5rem;
     padding-left: 0.5rem;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+    .titulo, .subtitulo{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
 }
 
 /* COLMEIA */
@@ -463,6 +539,104 @@ footer{
     .progress,.progress-bar{
         height: 2rem;
         border-radius: 0.5rem;
+    }
+}
+
+/* CURSO */
+
+.conteudo-curso{
+    margin: 4rem;
+    text-align: justify;
+}
+
+.btn-curso{
+    position: absolute;
+    right: 5rem;
+    bottom: 10vh;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .conteudo-curso{
+        margin: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-curso{
+        right: 1rem;
+        bottom: 2vh;
+    }
+}
+
+/* QUIZ */
+
+.conteudo-quiz{
+    margin: 4rem;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pergunta{
+    padding: 1rem;
+    width: max-content;
+    border: 1px solid #FDCA0C;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.resposta{
+    margin: 1rem;
+}
+
+.pergunta p{
+    margin: 0;
+}
+
+.pergunta .opcao{
+    color: #FDCA0C;
+    font-weight: 700;
+}
+
+.mensagem{
+    padding: 1rem;
+    width: max-content;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    position: absolute;
+    right: 5rem;
+    bottom: 20vh;
+    text-align: center;
+}
+
+.certo{
+    border: 1px solid green;
+}
+
+.errado{
+    border: 1px solid red;
+}
+
+.esconde{
+    display: none;
+}
+
+.btn-volt{
+    position: absolute;
+    left: 5rem;
+    bottom: 10vh;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .mensagem{
+        right: 15%;
+    }
+    
+    .btn-volt{
+        left: 1rem;
+        bottom: 2vh;
     }
 }
 
@@ -569,13 +743,6 @@ span.input-group-addon.btn.btn-warning {
 
 /* CONQUISTAS */
 
-.subtitulo{   
-    margin-top: 2rem;
-    margin-left: 5rem;
-    padding-left: 0.5rem;
-    font-weight: 700;
-}
-
 .imgCadeado{
     margin: 2vh;    
     width: 9vw;
@@ -609,68 +776,4 @@ span.input-group-addon.btn.btn-warning {
         width: 25vw;
     }
 
-}
-
-/* MENU DIREITO */
-
-.menuDireito{
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #000000;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-
-.menuAluno .profile{
-    margin: 1.9rem;
-}
-
-.btnAluno{
-    width: 3rem;
-    height: 3rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin: 0.9rem;
-    cursor: pointer;
-}
-
-.ativoResp{
-    fill: #FDCA0C;
-}
-
-/* MENU RESPONSIVO */
-
-@media only screen and (max-width: 992px) {
-    .menuNav,.menuAluno{
-        display: none;
-    }
-
-    .conteudo{
-        width: 100%;
-        height: 90vh;
-    }
-
-    .menuResp{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 10vh;
-        background-color: #000000;
-    }
-
-    .btnResp, .profileResp{
-        width: 2.5rem;
-        height: 2.5rem;
-        cursor: pointer;
-    }
-
-    .ativoResp{
-        fill: #FDCA0C;
-    }
 }

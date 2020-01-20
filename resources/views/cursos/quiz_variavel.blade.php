@@ -5,16 +5,86 @@
 @section('conteudo')
     <section class="conteudo flex-grow-1">
         <h1 class="titulo">Variáveis</h1>
-        <h3 class="subtitulo">Se temos:</h3>        
-        <p>var x = 50;</p>
-        <p>var y = 15;</p>
-        <p>qual é o valor da variável x?</p>    
+        <h3 class="subtitulo">Pergunta:</h3>
+        <div class="conteudo-quiz">
+            <div class="pergunta">
+                <p>Se temos:</p>
+                <p>var x = 50;</p>
+                <p>var y = 15;</p>
+                <p>Qual é o valor da variável x?</p>
+                <form class="resposta">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quiz" id="a" value="a">
+                        <label class="form-check-label" for="a">
+                            <span class="opcao">A -</span> 89
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quiz" id="b" value="b">
+                        <label class="form-check-label" for="b">
+                            <span class="opcao">B -</span> 15
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quiz" id="c" value="c" certo>
+                        <label class="form-check-label" for="c">
+                            <span class="opcao">C -</span> 50
+                        </label>
+                    </div> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quiz" id="d" value="d">
+                        <label class="form-check-label" for="d">
+                            <span class="opcao">D -</span> 35
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mensagem esconde"></div>
 
-        <input type="radio" name="a" id="a"><label for="a">a - 89;</label><br>
-        <input type="radio" name="b" id="b"><label for="b">b - 15;</label><br>
-        <input type="radio" name="c" id="c" certo><label for="c">c - 50;</label><br>
-        <input type="radio" name="d" id="d"><label for="d">d - 35;</label><br>
-
-        <a href="/variavel_int" class="btn btn-warning my-2 my-sm-0 ml-3 mr-3 text-white">enviar</a>
+        <a class="btn btn-warning btn-curso resp" onclick="respostaCerta()">verificar resposta</a>
+        <a class="btn btn-warning btn-curso prox esconde" href="/variavel"> próximo ►► </a>
+        <a class="btn btn-warning btn-volt esconde" href="/variavel"> ◄◄ voltar </a>
     </section>
+    <script>
+        function respostaCerta(){
+            let respostas = document.querySelectorAll('input');
+            let mensagem = document.querySelector('.mensagem');
+            let resp = document.querySelector('.resp');
+            let prox = document.querySelector('.prox');
+            let volt = document.querySelector('.btn-volt');
+
+            respostas.forEach(resposta => {
+                if(resposta.checked){
+                    if(resposta.hasAttribute("certo")){
+                        mensagem.textContent = "Sua resposta está certa!"
+                        mensagem.classList.add('certo');
+                        mensagem.classList.remove('errado');
+                        mensagem.classList.remove('esconde');
+                        resp.classList.add('esconde');
+                        prox.classList.remove('esconde');
+                        volt.classList.add('esconde');
+                        exit;
+                    }else{
+                        mensagem.innerHTML = `Sua resposta está errada!<br>Tente de novo ou volte!`;
+                        mensagem.classList.add('errado');
+                        mensagem.classList.remove('certo');
+                        mensagem.classList.remove('esconde');
+                        resp.classList.remove('esconde');
+                        prox.classList.add('esconde');
+                        volt.classList.remove('esconde');
+                        exit;
+                    }
+                }else{
+                    mensagem.textContent = "Escolha uma resposta!"
+                    mensagem.classList.add('errado');
+                    mensagem.classList.remove('certo');
+                    mensagem.classList.remove('esconde');
+                    resp.classList.remove('esconde');
+                    prox.classList.add('esconde');
+                    volt.classList.add('esconde');
+                }
+            });
+        }
+    </script>
 @endsection
