@@ -455,11 +455,11 @@ footer{
 }
 
 .btnCurso{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #FFFFFF;
     border-radius: 1rem;
-    width: 25%;
+    width: 20%;
     text-decoration: none;
     text-align: center;
     padding: 1rem 0;
@@ -471,8 +471,8 @@ footer{
 }
 
 .btnCurso img{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .html {
@@ -482,6 +482,10 @@ footer{
 
 .css {
     background-color: rgba(204, 0, 196, 0.502);
+}
+
+.logica {
+    background-color: #1d8a1d;
 }
 
 

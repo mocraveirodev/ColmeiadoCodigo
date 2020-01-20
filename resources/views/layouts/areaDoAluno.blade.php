@@ -1,3 +1,5 @@
+@include('includes.cursos')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
