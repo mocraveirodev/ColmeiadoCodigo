@@ -15,11 +15,12 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'IndexController@viewHome');
-Route::get('/home', 'IndexController@viewHome');
-Route::get('/colmeia', 'AlunoController@viewColmeia');
-Route::get('/chat', "AlunoController@viewChat");
-Route::get('/conquistas', "AlunoController@viewConquistas");
+Route::get('/', 'IndexController@viewHome')->name('home');
+Route::get('/home', 'IndexController@viewHome')->name('home');
+Route::get('/#trilhas', 'IndexController@viewHome')->name('cursos');
+Route::get('/colmeia', 'AlunoController@viewColmeia')->name('colmeia');
+Route::get('/chat', "AlunoController@viewChat")->name('chat');
+Route::get('/conquistas', "AlunoController@viewConquistas")->name('conquistas');
 Route::get('/notificacao', "AlunoController@viewConquistas");
 Route::get('/config', "AlunoController@viewConquistas");
 Route::get('/ajuda', "AlunoController@viewConquistas");

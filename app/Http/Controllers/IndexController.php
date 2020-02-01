@@ -8,7 +8,10 @@ use Auth;
 class IndexController extends Controller
 {
     public function viewHome(){
+        $user = Auth::user();
 
-        return view('index');
+        // dd($user->name);
+
+        return view('index',["user"=>$user]);
     }
 }

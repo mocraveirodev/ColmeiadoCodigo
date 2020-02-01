@@ -3,32 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class CursoController extends Controller
 {
     function viewVariavel(){
-        return view("cursos.variavel");
+        $user = Auth::user();
+        return view("cursos.variavel",["user"=>$user]);
     }
     function viewQuizVariavel(){
-        return view("cursos.quiz_variavel");
+        $user = Auth::user();
+        return view("cursos.quiz_variavel",["user"=>$user]);
     }
     function viewVariavelInt(){
-        return view("cursos.variavel_int");
+        $user = Auth::user();
+        return view("cursos.variavel_int",["user"=>$user]);
     }
     function viewQuizVariavelInt(){
-        return view("cursos.quiz_variavel_int");
+        $user = Auth::user();
+        return view("cursos.quiz_variavel_int",["user"=>$user]);
     }
     function viewVariavelFloat(){
-        return view("cursos.variavel_float");
+        $user = Auth::user();
+        return view("cursos.variavel_float",["user"=>$user]);
     }
     function viewQuizVariavelFloat(){
-        return view("cursos.quiz_variavel_float");
+        $user = Auth::user();
+        return view("cursos.quiz_variavel_float",["user"=>$user]);
     }
     function viewVariavelString(){
-        return view("cursos.variavel_string");
+        $user = Auth::user();
+        return view("cursos.variavel_string",["user"=>$user]);
     }
     function viewQuizVariavelString(){
-        return view("cursos.quiz_variavel_string");
+        $user = Auth::user();
+        return view("cursos.quiz_variavel_string",["user"=>$user]);
     }
     
 }

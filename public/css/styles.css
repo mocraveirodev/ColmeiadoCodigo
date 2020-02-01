@@ -12,7 +12,7 @@ body {
 }
 
 #home .row{
-    padding: 5rem 1rem;
+    /* padding: 5rem 1rem; */
     text-align: center;
 }
 
@@ -62,6 +62,9 @@ header .logo{
     margin: 0.4rem 0;
     transition: 0.4s;
 }
+header p{
+    cursor: pointer;
+}
 
 .navbar .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -105,6 +108,11 @@ header .navbar-collapse{
     padding: 1rem;
 }
 
+.modal-title{
+    border-left: 6px solid #FDCA0C;
+    padding-left: 0.5rem;
+}
+
 .facegmail {
     display: flex;
     justify-content: space-around;
@@ -135,10 +143,6 @@ header .navbar-collapse{
 }
 
 /* BANNER */
-
-#banner .container{
-    padding-top: 10vh;
-}
 
 #banner p {
     font-size: 1.5rem;

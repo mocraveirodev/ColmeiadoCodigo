@@ -38,7 +38,7 @@
         </div>
     </div>
     <main id="home">
-        <section id="banner" >
+        <section id="banner" class="text-center">
             <div class="container">
                 <div class="row text-center pt-5">
                     <div class="col-md-5 d-none d-md-block">
@@ -47,13 +47,15 @@
                     <div class="col-md-7 my-auto">
                         <p class="pt-sm-5">APRENDA. DESENVOLVA. CONSTRUA.</p>
                         <p class="pb-sm-5">Sua própria colmeia do conhecimento.</p>
+                        <a href="#" class="btn btn-warning my-2 my-sm-0 ml-3 mr-3 text-dark" data-toggle="modal" data-target="#modalCadastrar">Venha para nossa Colméia</a>
                     </div>
                 </div>
             </div>
+            <a href="#trilhas"><i class="fas fa-angle-double-down fa-3x text-warning"></i></a>
         </section>
         <section id="trilhas">
             <div class="container">
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col-5 p-2 my-auto">
                         <img src="img/trilhas.svg" class="img-fluid" alt="Imagem das Trilhas">
                     </div>
