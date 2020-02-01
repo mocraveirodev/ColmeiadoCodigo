@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coméia do Código</title>
+    <title>Colmeia do Código</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- Fonte -->
@@ -40,18 +40,18 @@
     <main id="home">
         <section id="banner" class="text-center">
             <div class="container">
-                <div class="row text-center pt-5">
+                <div class="row text-center pt-5 mt-5 mt-md-0">
                     <div class="col-md-5 d-none d-md-block">
                         <img src="img/colmeia.svg" class="img-fluid" alt="Imagem de Colmeia">
                     </div>
                     <div class="col-md-7 my-auto">
                         <p class="pt-sm-5">APRENDA. DESENVOLVA. CONSTRUA.</p>
                         <p class="pb-sm-5">Sua própria colmeia do conhecimento.</p>
-                        <a href="#" class="btn btn-warning my-2 my-sm-0 ml-3 mr-3 text-dark" data-toggle="modal" data-target="#modalCadastrar">Venha para nossa Colméia</a>
+                        <a href="#" class="btn btn-warning my-2 my-sm-0 ml-3 mr-3 mb-5 text-dark" data-toggle="modal" data-target="#modalCadastrar">Venha para nossa Colmeia</a>
                     </div>
                 </div>
             </div>
-            <a href="#trilhas"><i class="fas fa-angle-double-down fa-3x text-warning"></i></a>
+            <a href="#trilhas"><i class="fas fa-angle-double-down fa-3x text-warning d-none d-md-block mt-4"></i></a>
         </section>
         <section id="trilhas">
             <div class="container">

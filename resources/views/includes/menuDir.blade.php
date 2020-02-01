@@ -1,8 +1,8 @@
 <section class="menuAluno">
-    <p class="text-warning p-3 m-0" onclick="menuAluno()">{{$user->name}}! <i class="fa fa-caret-down pl-2"></i></p>
+    <p class="text-dark mt-4 pr-3 text-center" onclick="menuAluno()">{{$user->name}}<br><i class="fas fa-angle-double-down"></i></p>
     <div class="menuDireito">
         <div class="botoes">
-            <p class="text-warning p-3 m-0" onclick="menuAluno()">{{$user->name}}! <i class="fa fa-caret-down pl-2"></i></p>
+        <p class="text-warning mt-4 pr-2 text-center" onclick="menuAluno()">{{$user->name}}<br><i class="fas fa-angle-double-down"></i></p>
             <div class="navegacao">
                 <a href="/notificacao" ><img class="btnAluno" src="img/notificacaoAtivo.svg" alt="Notificação"></a>
                 <a href="{{ route('chat') }}" ><img class="btnAluno" src="img/chatNotificacao.svg" alt="Chat"></a>
