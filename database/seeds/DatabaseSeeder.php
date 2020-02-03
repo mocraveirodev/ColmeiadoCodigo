@@ -14,5 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersColmeiaSeeder::class);
         $this->call(CursosSeeder::class);
         $this->call(ConteudosSeeder::class);
+        $this->call(QuizSeeder::class);
+        $this->call(ProgressoSeeder::class);
     }
 }

@@ -5,7 +5,7 @@
 @section('conteudo')
     <section class="conteudo flex-grow-1">
         <h1 class="titulo">Variáveis</h1>
-        <h3 class="subtitulo">Pergunta:</h3>
+        <h3 class="subtitulo">Vamos ver o que você aprendeu?</h3>
         <div class="conteudo-quiz">
             <div class="pergunta">
                 <p>Se temos:</p>
