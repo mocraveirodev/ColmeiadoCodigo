@@ -11,17 +11,12 @@ class CursosSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('cursos')->insert([
-            'curso' => "HTML"
-        ]);
-        DB::table('cursos')->insert([
-            'curso' => "CSS"
-        ]);
-        DB::table('cursos')->insert([
-            'curso' => "Lógica"
-        ]);
-        DB::table('cursos')->insert([
-            'curso' => "Javascript"
-        ]);
+        $cursos = [
+            ['curso' => "HTML"],
+            ['curso' => "CSS"],
+            ['curso' => "Lógica"],
+            ['curso' => "Javascript"],
+        ];
+        DB::table('cursos')->insert($cursos);
     }
 }

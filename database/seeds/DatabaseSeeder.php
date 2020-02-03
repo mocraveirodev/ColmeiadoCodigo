@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersColmeiaSeeder::class);
         $this->call(CursosSeeder::class);
+        $this->call(ConteudosSeeder::class);
     }
 }
