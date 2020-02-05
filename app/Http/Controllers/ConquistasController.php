@@ -7,5 +7,8 @@ use Auth;
 
 class ConquistasController extends Controller
 {
-    //
+    public function viewConquistas(Request $request) {
+        $user = Auth::user();
+        return view('conquistas',["user"=>$user]);
+    }
 }
