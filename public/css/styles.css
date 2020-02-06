@@ -142,6 +142,11 @@ header .navbar-collapse{
     font-size: 0.7rem;
 }
 
+.mensagem-erro {
+    font-size: 12px;
+    color: red;
+}
+
 /* BANNER */
 
 #banner p {
