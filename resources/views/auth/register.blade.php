@@ -13,7 +13,7 @@
                     <button type="button" class="btn btn-danger">Google</button>
                 </div>
                 <p class="m-3">ou cadastre-se com</p>
-                <form action="{{ route('register') }}" method="post" class="formulario">
+                <form action="{{ route('register') }}" method="post" id="formulario" class="formulario">
                     @csrf
                     <div class="form-group">
                         <label for="nome">Nome</label>
@@ -33,7 +33,7 @@
                         <input type="password" name="password_confirmation" id="repetir-senha" class="form-control validar" minlength="8" required>
                         <p class="senha">Sua senha deve ter no mínimo 8 caracteres e incluir letras, números e símbolos</p>
                     </div>
-                    <button class="btn btn-warning" id="registerbtn" type="submit" onclick="verificarEmail()">Comece a aprender agora!</button>
+                    <button class="btn btn-warning" action="{{ route('register') }}" id="registerbtn" type="submit" >Comece a aprender agora!</button>
                 </form>
             </div>
             <div class="modal-footer justify-content-center">
