@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+    
     <link rel="stylesheet" href="views/css/styles.css">
 </head>
 <body>
@@ -171,6 +171,7 @@
             $(".menuDireito").toggle();
         }
     </script>
+    <script src="valida.js"></script>
 
 </body>
 </html>

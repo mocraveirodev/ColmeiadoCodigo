@@ -13,11 +13,11 @@
                     <button type="button" class="btn btn-danger">Google</button>
                 </div>
                 <p class="m-3">ou entre com</p>
-                <form method="POST" action="{{ route('login') }}" class="abc">
+                <form method="POST" action="{{ route('login') }}" class="formulario">
                     @csrf
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email"id="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input type="email" id="email-login" class="form-control validar" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror validar" name="password" required autocomplete="current-password">
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="form-group text-center">
-                        <button type="submit" class="btn btn-warning">
+                        <button type="submit" id="loginbtn" class="btn btn-warning">
                             {{ __('Entrar') }}
                         </button>
                     </div>

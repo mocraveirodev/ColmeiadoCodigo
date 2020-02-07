@@ -13,18 +13,23 @@
                     <button type="button" class="btn btn-danger">Google</button>
                 </div>
                 <p class="m-3">ou cadastre-se com</p>
-                <form action="/ColmeiadoCodigo/area-aluno" method="post">
+                <form action="/ColmeiadoCodigo/area-aluno" method="post" class="formulario">
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" class="form-control" required>
+                        <input type="text" name="nome" id="nome" class="form-control validar" required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control" required>
+                        <input type="email" name="email" id="email" class="form-control validar" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" class="form-control" minlength="8" required>
+                        <input type="password" name="senha" id="senha" class="form-control validar" minlength="8" required>
+                        <p class="senha">Sua senha deve ter no mínimo 8 caracteres e incluir letras, números e símbolos</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="repetir-senha">Repetir Senha</label>
+                        <input type="password" name="senha" id="repetir-senha" class="form-control validar" minlength="8" required>
                         <p class="senha">Sua senha deve ter no mínimo 8 caracteres e incluir letras, números e símbolos</p>
                     </div>
                     <button class="btn btn-warning" type="submit">Comece a aprender agora!</button>
