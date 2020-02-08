@@ -11,13 +11,33 @@ use App\Progresso;
 
 class CursoController extends Controller
 {
+    public function getCursos(){
+        $cursos = Curso::all();
+
+        return $cursos;
+    }
+
+    public function getConteudos(){
+        $conteudos = Conteudo::all();
+
+        return $conteudos;
+    }
+
+    public function getQuiz(){
+        $quiz = Quiz::all();
+
+        return $quiz;
+    }
     public function viewHtml(Request $request) {
         $user = Auth::user();
-        $conteudos = Conteudo::all();
-        foreach($conteudos as $conteudo){
-            
+        $progresso = Progresso::find($user->id);
+        $conteudo = Conteudo::where('id','=',$progresso->prog_html)->get();
+        
+        if($conteudo->isEmpty()){
+            $conteudo = Conteudo::where('curso_id', 1)->first();
         }
-        return view('cursos.html',["user"=>$user]);
+
+        return view('layouts.conteudo',["user"=>$user, "conteudo"=>$conteudo, "progresso"=>$progresso]);
     }
 
     public function viewCss(Request $request) {
