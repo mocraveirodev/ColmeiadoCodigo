@@ -591,7 +591,7 @@ footer{
     align-items: center;
 }
 
-.pergunta{
+.box-pergunta{
     padding: 1rem;
     width: max-content;
     border: 1px solid #FDCA0C;
@@ -607,7 +607,7 @@ footer{
     margin: 0;
 }
 
-.pergunta .opcao{
+.box-pergunta .opcao{
     color: #FDCA0C;
     font-weight: 700;
 }

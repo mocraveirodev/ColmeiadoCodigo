@@ -31,15 +31,17 @@ class CursoController extends Controller
     public function viewHtml(Request $request) {
         $user = Auth::user();
         $progresso = Progresso::find($user->id);
-        $conteudo = Conteudo::where('id','=',$progresso->prog_html)->get();
+        $conteudo = Conteudo::where('id', $progresso->prog_html)->get();
+        // dd($conteudo);
         
         if($conteudo->isEmpty()){
             $conteudo = Conteudo::where('curso_id', 1)->first();
+            $progresso->prog_html = $conteudo->id;
+            $progresso->save();
         }
-
+        // dd($conteudo);
         return view('layouts.conteudo',["user"=>$user, "conteudo"=>$conteudo, "progresso"=>$progresso]);
     }
-
     public function viewCss(Request $request) {
         $user = Auth::user();
         return view('cursos.css',["user"=>$user]);
@@ -53,6 +55,15 @@ class CursoController extends Controller
     public function viewJs(Request $request) {
         $user = Auth::user();
         return view('cursos.js',["user"=>$user]);
+    }
+
+    public function viewQuiz(Request $request) {
+        dd($request);
+        $user = Auth::user();
+        $progresso = Progresso::find($user->id);
+        $quiz = Quiz::where('cont_id', $progresso->prog_html)->get();
+        // dd($quiz);
+        return view('layouts.quiz',["user"=>$user, "quiz"=>$quiz]);
     }
 
     function recuperaCursos(){
