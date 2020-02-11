@@ -11,29 +11,25 @@ use App\Progresso;
 
 class CursoController extends Controller
 {
-    public function getCursos(){
-        $cursos = Curso::all();
-
-        return $cursos;
-    }
-
-    public function getConteudos(){
-        $conteudos = Conteudo::all();
-
-        return $conteudos;
-    }
-
-    public function getQuiz(){
-        $quiz = Quiz::all();
-
-        return $quiz;
-    }
     public function viewHtml(Request $request) {
+        // dd($request['progresso']);
         $user = Auth::user();
         $progresso = Progresso::find($user->id);
+        $prog_sessao = $request->session()->all();
+        $total_cont = Conteudo::where('curso_id', 1)->count();
+
+        if(isset ($prog_sessao['progresso'])){
+            $prog_sessao['progresso']++;
+            if($prog_sessao['progresso'] <= $total_cont){
+                $progresso->prog_html = $prog_sessao['progresso'];
+                $progresso->save();
+            }else{
+                return view('concluido',["user"=>$user, "titulo"=>"HTML"]);
+            }
+        }
+
+        // dd($data['progresso']);
         $conteudo = Conteudo::where('id', $progresso->prog_html)->get();
-        // dd($conteudo);
-        
         if($conteudo->isEmpty()){
             $conteudo = Conteudo::where('curso_id', 1)->first();
             $progresso->prog_html = $conteudo->id;
@@ -47,6 +43,11 @@ class CursoController extends Controller
         return view('cursos.css',["user"=>$user]);
     }
 
+    public function viewConcluido(){
+        $user = Auth::user();
+        return view('concluido',["user"=>$user, "titulo"=>"HTML"]);
+    }
+
     public function viewLogica(Request $request) {
         $user = Auth::user();
         return view('cursos.logica',["user"=>$user]);
@@ -58,16 +59,11 @@ class CursoController extends Controller
     }
 
     public function viewQuiz(Request $request) {
-        dd($request);
         $user = Auth::user();
         $progresso = Progresso::find($user->id);
         $quiz = Quiz::where('cont_id', $progresso->prog_html)->get();
-        // dd($quiz);
+        $request->session()->put('progresso', $quiz[0]->cont_id);
         return view('layouts.quiz',["user"=>$user, "quiz"=>$quiz]);
-    }
-
-    function recuperaCursos(){
-        return Curso::all();
     }
 
     function viewVariavel(){
