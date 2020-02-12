@@ -1,5 +1,5 @@
 const regexNome = /^[a-zA-Z]+$/g
-const regexSenha = /^(?=.{8,})(?=.*[a-zA-Z])(?=.*[\d])(?=.*[!@#$%¨*^&+=]).*$/g
+const regexSenha = /^(?=.{8,})(?=.*[a-zA-Z])(?=.*[\d])(?=.*[!@#$%¨*^&+=.,:;-/'"ªº°§¬¢£³²¹<>₢]).*$/g
 
 var formulario = document.getElementById("formulario");
 this.formulario.addEventListener('submit', e => {
