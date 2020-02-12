@@ -11,7 +11,11 @@ use App\Progresso;
 
 class CursoController extends Controller
 {
+    public function recuperaCurso(){
+        return Curso::all();
+    }
     public function viewHtml(Request $request) {
+        // dd($this->recuperaCurso());
         // dd($request['progresso']);
         $user = Auth::user();
         $progresso = Progresso::find($user->id);

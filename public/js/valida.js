@@ -1,5 +1,5 @@
 const regexNome = /^[a-zA-Z]+$/g
-const regexSenha = /^(?=.{8,})(?=.*[a-zA-Z])(?=.*[\d])(?=.*[@#$%^&+=]).*$/g
+const regexSenha = /^(?=.{8,})(?=.*[a-zA-Z])(?=.*[\d])(?=.*[!@#$%¨*^&+=]).*$/g
 
 var formulario = document.getElementById("formulario");
 this.formulario.addEventListener('submit', e => {
@@ -10,6 +10,7 @@ function handleSubmit(e) {
     e.preventDefault();
     const camposValidos = camposSaoValidos();
     const senhasValidas = senhasSaoValidas();
+
     if(camposValidos && senhasValidas) {
         formulario.submit();
     }        
@@ -55,7 +56,7 @@ function camposSaoValidos() {
             if(validaNome(campo)) valid = true;
         }
         if(campo.id == 'email-register') {
-            if(validaEmail(campo)) valid = true;
+            if(!validaEmail(campo)) valid = false;
         }
     }
     return valid;
