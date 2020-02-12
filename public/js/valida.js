@@ -32,7 +32,7 @@ function senhasSaoValidas() {
     }
 
     if(!senha.value.match(regexSenha)) {
-        this.criaErro(campo, 'Senha precisa conter letras, números e caracteres especiais.');
+        this.criaErro(senha, 'Senha precisa conter letras, números e caracteres especiais.');
         valid = false;
     }
     return valid;
