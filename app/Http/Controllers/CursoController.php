@@ -14,6 +14,19 @@ class CursoController extends Controller
     public function recuperaCurso(){
         return Curso::all();
     }
+
+    public function recuperaConteudo(){
+        return Conteudo::all();
+    }
+
+    public function recuperaQuiz(){
+        return Quiz::all();
+    }
+
+    public function recuperaProgresso(){
+        return Progresso::all();
+    }
+    
     public function viewHtml(Request $request) {
         // dd($this->recuperaCurso());
         // dd($request['progresso']);
