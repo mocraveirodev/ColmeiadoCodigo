@@ -28,8 +28,6 @@ class CursoController extends Controller
     }
     
     public function viewHtml(Request $request) {
-        // dd($this->recuperaCurso());
-        // dd($request['progresso']);
         $user = Auth::user();
         $progresso = Progresso::find($user->id);
         $prog_sessao = $request->session()->all();
@@ -45,14 +43,21 @@ class CursoController extends Controller
             }
         }
 
-        // dd($data['progresso']);
         $conteudo = Conteudo::where('id', $progresso->prog_html)->get();
         if($conteudo->isEmpty()){
             $conteudo = Conteudo::where('curso_id', 1)->first();
             $progresso->prog_html = $conteudo->id;
             $progresso->save();
         }
-        // dd($conteudo);
+
+        return view('layouts.conteudo',["user"=>$user, "conteudo"=>$conteudo, "progresso"=>$progresso]);
+    }
+
+    public function viewVolta(Request $request) {
+        $user = Auth::user();
+        $progresso = Progresso::find($user->id);
+        
+        $conteudo = Conteudo::where('id', $progresso->prog_html)->get();
         return view('layouts.conteudo',["user"=>$user, "conteudo"=>$conteudo, "progresso"=>$progresso]);
     }
     public function viewCss(Request $request) {

@@ -16,7 +16,7 @@
 
         <a class="btn btn-warning btn-curso resp" onclick="respostaCerta()">verificar resposta</a>
         <a class="btn btn-warning btn-curso prox esconde" href="/html"> próximo ►► </a>
-        <a class="btn btn-warning btn-volt esconde" href="/html"> ◄◄ voltar </a>
+        <a class="btn btn-warning btn-volt esconde" href="/volta"> ◄◄ voltar </a>
     </section>
     <script>
         let pergunta = @json($quiz[0]->pergunta);
