@@ -166,6 +166,10 @@ header .navbar-collapse{
     border: 1px solid #707070;
 }
 
+#trilhas a:hover{
+    text-decoration: none;
+}
+
 #trilhas p {
     font-size: 1.5rem;
     font-weight: 700;

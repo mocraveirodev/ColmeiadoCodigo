@@ -63,10 +63,21 @@
                         <p class="pb-md-3">Aprenda as principais skills utilizadas pelo mercado e alavanque a sua carreira!</p>
                         <p class="pb-md-4"><span>Nossas trilhas de reconhecimento:</span></p>
                         <div class="d-flex flex-row justify-content-center">
-                            <div class="card text-white bg-warning mb-3 mr-2 align-items-center flex-row">
-                                <img src="img/front.svg" class="img-fluid p-2 d-none d-md-block" alt="Trilha FrontEnd">
-                                <p class="card-text p-2">FrontEnd</p>
-                            </div>
+                            @if(Auth::user())
+                                <a href="/colmeia">
+                                    <div class="card text-white bg-warning mb-3 mr-2 align-items-center flex-row">
+                                        <img src="img/front.svg" class="img-fluid p-2 d-none d-md-block" alt="Trilha FrontEnd">
+                                        <p class="card-text p-2">FrontEnd</p>
+                                    </div>
+                                </a>
+                            @else
+                                <a href="#" data-toggle="modal" data-target="#modalLogar">
+                                    <div class="card text-white bg-warning mb-3 mr-2 align-items-center flex-row">
+                                        <img src="img/front.svg" class="img-fluid p-2 d-none d-md-block" alt="Trilha FrontEnd">
+                                        <p class="card-text p-2">FrontEnd</p>
+                                    </div>
+                                </a>
+                            @endif
                             <div class="card text-white bg-warning mb-3 align-items-center flex-row border-0">
                                 <img src="img/back.svg" class="img-fluid p-2" alt="Trilha BackEnd">
                                 <p class="card-text p-2 m-0">BackEnd</p>
