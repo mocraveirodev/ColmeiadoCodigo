@@ -28,6 +28,7 @@ Route::get('/html','CursoController@viewHtml');
 Route::get('/css','CursoController@viewCss');
 Route::get('/logica','CursoController@viewLogica');
 Route::get('/js','CursoController@viewJs');
+Route::get('/volta','CursoController@viewVolta');
 Route::get('/quiz','CursoController@viewQuiz');
 Route::get('/concluido','CursoController@viewConcluido');
 Route::get('/variavel','CursoController@viewVariavel');
