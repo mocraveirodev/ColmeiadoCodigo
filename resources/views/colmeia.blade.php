@@ -7,9 +7,9 @@
         <h1 class="titulo">Colmeia</h1>
         <div class="cursos">
             <a href="/html" class="btnCurso html">HTML5</a>
-            <a href="/css" class="btnCurso css"><img src="/img/cadeado.svg" alt="Cadeado"> CSS</a>
+            <a href="/css" class="btnCurso css">CSS</a>
             <a href="/variavel" class="btnCurso logica">LÓGICA</a>
-            <a href="/js" class="btnCurso js"><img src="/img/cadeado.svg" alt="Cadeado"> JAVASCRIPT</a>
+            <a href="/js" class="btnCurso js">JAVASCRIPT</a>
         </div>
         <div class="progresso">
             <p>Meta Diária</p>
