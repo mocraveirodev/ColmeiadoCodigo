@@ -78,15 +78,32 @@
                                     </div>
                                 </a>
                             @endif
-                            <div class="card text-white bg-warning mb-3 align-items-center flex-row border-0">
-                                <img src="img/back.svg" class="img-fluid p-2" alt="Trilha BackEnd">
-                                <p class="card-text p-2 m-0">BackEnd</p>
-                                <div class="capa texto">Em breve</div>                                
-                            </div>
+                            <a href="#" data-toggle="modal" data-target="#modalBreve">
+                                <div class="card text-white bg-warning mb-3 align-items-center flex-row border-0">
+                                    <img src="img/back.svg" class="img-fluid p-2" alt="Trilha BackEnd">
+                                    <p class="card-text p-2 m-0">BackEnd</p>
+                                    <div class="capa texto">Em breve</div>                                
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="modalBreve" tabindex="-1" role="dialog" aria-labelledby="modalBreve" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="logarUsuario">BackEnd em breve!</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <p class="m-3">Já já teremos BackEnd.<br><br>Aguarde!</p>
+            </div>
+        </div>
+    </div>
+</div>
         </section>
         <section id="sobre" class="text-center d-none d-md-block">
             <p class="text-white pt-md-5 pb-md-5 mt-md-5">CONHEÇA O PROJETO:</p>
