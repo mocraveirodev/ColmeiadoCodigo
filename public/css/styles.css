@@ -155,6 +155,10 @@ header .navbar-collapse{
     color: #3D3103;
 }
 
+#banner .setas:hover{
+    text-decoration: none;
+}
+
 /* TRILHAS */
 
 #trilhas{

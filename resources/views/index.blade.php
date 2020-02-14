@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#trilhas"><i class="fas fa-angle-double-down fa-3x text-warning d-none d-md-block mt-4"></i></a>
+            <a class="setas" href="#trilhas"><i class="fas fa-angle-double-down fa-3x text-warning d-none d-md-block mt-4"></i></a>
         </section>
         <section id="trilhas">
             <div class="container">
